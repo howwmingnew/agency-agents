@@ -95,6 +95,13 @@ cp -r agency-agents/* ~/.claude/agents/
 | 🧬 [AI 資料修復工程師](engineering/engineering-ai-data-remediation-engineer.md) | 自我修復管線、隔離 SLM、語義聚類 | 大規模修復損壞資料且零資料遺失 |
 | 🔧 [資料工程師](engineering/engineering-data-engineer.md) | 資料管線、Lakehouse 架構、ETL/ELT | 建構可靠的資料基礎設施與倉儲 |
 | 🔗 [飛書整合開發者](engineering/engineering-feishu-integration-developer.md) | 飛書/Lark 開放平台、機器人、工作流程 | 建構飛書生態系統整合 |
+| 🖼️ [Qt UI 工程師](engineering/engineering-qt-ui-engineer.md) | Qt 6、QML/Qt Quick、自訂元件、跨平台桌面 UI | 跨平台桌面與嵌入式 UI 開發、Qt 元件庫 |
+| 🧊 [VTK / 3D 渲染工程師](engineering/engineering-vtk-3d-rendering-engineer.md) | VTK 管線、體積渲染、GPU 加速、科學視覺化 | 醫學/科學資料的 3D 視覺化與大規模資料集渲染 |
+| ⚡ [CUDA / GPU 運算工程師](engineering/engineering-cuda-gpu-computing-engineer.md) | CUDA 核心優化、平行運算、記憶體層級調校 | GPU 加速應用、高效能運算、醫學影像處理 |
+| 🏥 [醫學影像工程師](engineering/engineering-medical-imaging-engineer.md) | DICOM、CT/MRI 處理、分割、ITK 管線 | 醫學影像處理、法規合規醫療軟體開發 |
+| 🏛️ [C++ 架構工程師](engineering/engineering-cpp-architecture-engineer.md) | 現代 C++20/23、高效能系統設計、API 設計 | 大規模 C++ 程式碼庫架構、並行、重構 |
+| 🔧 [CMake / 建構系統工程師](engineering/engineering-cmake-build-system-engineer.md) | 現代 CMake、跨平台建構、依賴管理 | 建構系統設計、CI/CD 整合、跨平台編譯 |
+| 🔗 [Qt ↔ VTK 整合工程師](engineering/engineering-qt-vtk-integration-engineer.md) | QVTKWidget、MPR 佈局、Qt 信號與 VTK 觀察者橋接 | 醫學影像檢視器、Qt+VTK 即時互動應用 |
 
 ### 🎨 設計部門
 

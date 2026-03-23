@@ -95,6 +95,13 @@ Building the future, one commit at a time.
 | 🧬 [AI Data Remediation Engineer](engineering/engineering-ai-data-remediation-engineer.md) | Self-healing pipelines, air-gapped SLMs, semantic clustering | Fixing broken data at scale with zero data loss |
 | 🔧 [Data Engineer](engineering/engineering-data-engineer.md) | Data pipelines, lakehouse architecture, ETL/ELT | Building reliable data infrastructure and warehousing |
 | 🔗 [Feishu Integration Developer](engineering/engineering-feishu-integration-developer.md) | Feishu/Lark Open Platform, bots, workflows | Building integrations for the Feishu ecosystem |
+| 🖼️ [Qt UI Engineer](engineering/engineering-qt-ui-engineer.md) | Qt 6, QML/Qt Quick, custom widgets, cross-platform desktop UI | Cross-platform desktop and embedded UI development |
+| 🧊 [VTK / 3D Rendering Engineer](engineering/engineering-vtk-3d-rendering-engineer.md) | VTK pipelines, volume rendering, GPU acceleration, scientific visualization | 3D visualization of medical/scientific data at scale |
+| ⚡ [CUDA / GPU Computing Engineer](engineering/engineering-cuda-gpu-computing-engineer.md) | CUDA kernel optimization, parallel computing, memory hierarchy tuning | GPU-accelerated applications, HPC, medical image processing |
+| 🏥 [Medical Imaging Engineer](engineering/engineering-medical-imaging-engineer.md) | DICOM, CT/MRI processing, segmentation, ITK pipelines | Medical image processing, regulatory-compliant medical software |
+| 🏛️ [C++ Architecture Engineer](engineering/engineering-cpp-architecture-engineer.md) | Modern C++20/23, high-performance system design, API design | Large-scale C++ codebase architecture, concurrency, refactoring |
+| 🔧 [CMake / Build System Engineer](engineering/engineering-cmake-build-system-engineer.md) | Modern CMake, cross-platform builds, dependency management | Build system design, CI/CD integration, cross-compilation |
+| 🔗 [Qt ↔ VTK Integration Engineer](engineering/engineering-qt-vtk-integration-engineer.md) | QVTKWidget, MPR layouts, Qt signal ↔ VTK observer bridging | Medical imaging viewers, real-time interactive Qt+VTK applications |
 
 ### 🎨 Design Division
 
