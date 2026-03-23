@@ -102,6 +102,7 @@ Building the future, one commit at a time.
 | 🏛️ [C++ Architecture Engineer](engineering/engineering-cpp-architecture-engineer.md) | Modern C++20/23, high-performance system design, API design | Large-scale C++ codebase architecture, concurrency, refactoring |
 | 🔧 [CMake / Build System Engineer](engineering/engineering-cmake-build-system-engineer.md) | Modern CMake, cross-platform builds, dependency management | Build system design, CI/CD integration, cross-compilation |
 | 🔗 [Qt ↔ VTK Integration Engineer](engineering/engineering-qt-vtk-integration-engineer.md) | QVTKWidget, MPR layouts, Qt signal ↔ VTK observer bridging | Medical imaging viewers, real-time interactive Qt+VTK applications |
+| 🔄 [WPF ↔ Qt Porting Engineer](engineering/engineering-wpf-qt-porting-engineer.md) | XAML→QML, MVVM→Qt patterns, WPF control mapping, migration planning | WPF developers transitioning to Qt, desktop app porting |
 
 ### 🎨 Design Division
 
