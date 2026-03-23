@@ -1,47 +1,47 @@
-# Nexus Spatial: Full Agency Discovery Exercise
+# Nexus Spatial：完整 Agency 探索演練
 
-> **Exercise type:** Multi-agent product discovery
-> **Date:** March 5, 2026
-> **Agents deployed:** 8 (in parallel)
-> **Duration:** ~10 minutes wall-clock time
-> **Purpose:** Demonstrate full-agency orchestration from opportunity identification through comprehensive planning
-
----
-
-## Table of Contents
-
-1. [The Opportunity](#1-the-opportunity)
-2. [Market Validation](#2-market-validation)
-3. [Technical Architecture](#3-technical-architecture)
-4. [Brand Strategy](#4-brand-strategy)
-5. [Go-to-Market & Growth](#5-go-to-market--growth)
-6. [Customer Support Blueprint](#6-customer-support-blueprint)
-7. [UX Research & Design Direction](#7-ux-research--design-direction)
-8. [Project Execution Plan](#8-project-execution-plan)
-9. [Spatial Interface Architecture](#9-spatial-interface-architecture)
-10. [Cross-Agent Synthesis](#10-cross-agent-synthesis)
+> **演練類型：** 多 Agent 產品探索
+> **日期：** 2026 年 3 月 5 日
+> **部署 Agents：** 8 位（平行運作）
+> **時長：** 約 10 分鐘實際時間
+> **目的：** 展示從機會辨識到全面規劃的完整 agency 協作
 
 ---
 
-## 1. The Opportunity
+## 目錄
 
-### How It Was Found
+1. [機會發掘](#1-機會發掘)
+2. [市場驗證](#2-市場驗證)
+3. [技術架構](#3-技術架構)
+4. [品牌策略](#4-品牌策略)
+5. [上市策略與成長](#5-上市策略與成長)
+6. [客戶支援藍圖](#6-客戶支援藍圖)
+7. [UX 研究與設計方向](#7-ux-研究與設計方向)
+8. [專案執行計畫](#8-專案執行計畫)
+9. [空間介面架構](#9-空間介面架構)
+10. [跨 Agent 綜合分析](#10-跨-agent-綜合分析)
 
-Web research across multiple sources identified three converging trends:
+---
 
-- **AI infrastructure/orchestration** is the fastest-growing software category (AI orchestration market valued at ~$13.5B in 2026, 22%+ CAGR)
-- **Spatial computing** (Vision Pro, WebXR) is maturing but lacks killer enterprise apps
-- Every existing AI workflow tool (LangSmith, n8n, Flowise, CrewAI) is a **flat 2D dashboard**
+## 1. 機會發掘
 
-### The Concept: Nexus Spatial
+### 如何發現的
 
-An AI Agent Command Center in spatial computing -- a VisionOS + WebXR application that provides an immersive 3D command center for orchestrating, monitoring, and interacting with AI agents. Users visualize agent pipelines as 3D node graphs, monitor real-time outputs in spatial panels, build workflows with drag-and-drop in 3D space, and collaborate in shared spatial environments.
+跨多個來源的網路調研辨識出三個匯聚的趨勢：
 
-### Why This Agency Is Uniquely Positioned
+- **AI 基礎設施/協調** 是成長最快的軟體類別（AI 協調市場 2026 年估值約 135 億美元，年複合成長率 22%+）
+- **空間運算**（Vision Pro、WebXR）日趨成熟但缺乏殺手級企業應用
+- 所有現有 AI 工作流程工具（LangSmith、n8n、Flowise、CrewAI）都是**扁平的 2D 儀表板**
 
-The agency has deep spatial computing expertise (XR developers, VisionOS engineers, Metal specialists, interface architects) alongside a full engineering, design, marketing, and operations stack -- a rare combination for a product that demands both spatial computing mastery and enterprise software rigor.
+### 概念：Nexus Spatial
 
-### Sources
+一個空間運算中的 AI Agent 指揮中心 — 一個 VisionOS + WebXR 應用程式，提供沉浸式 3D 指揮中心來協調、監控和互動 AI agents。使用者將 agent 管線視覺化為 3D 節點圖，在空間面板中即時監控輸出，在 3D 空間中以拖放方式建構工作流程，並在共享空間環境中協作。
+
+### 為何此 Agency 具有獨特優勢
+
+Agency 擁有深厚的空間運算專業能力（XR 開發者、VisionOS 工程師、Metal 專家、介面架構師），同時具備完整的工程、設計、行銷和營運體系 — 對於一個同時要求空間運算精通度和企業軟體嚴謹度的產品而言，這是罕見的組合。
+
+### 來源
 
 - [Profitable SaaS Ideas 2026 (273K+ Reviews)](https://bigideasdb.com/profitable-saas-micro-saas-ideas-2026)
 - [2026 SaaS and AI Revolution: 20 Top Trends](https://fungies.io/the-2026-saas-and-ai-revolution-20-top-trends/)
@@ -51,82 +51,82 @@ The agency has deep spatial computing expertise (XR developers, VisionOS enginee
 
 ---
 
-## 2. Market Validation
+## 2. 市場驗證
 
-**Agent:** Product Trend Researcher
+**Agent：** Product Trend Researcher
 
-### Verdict: CONDITIONAL GO -- 2D-First, Spatial-Second
+### 結論：有條件通過 — 先 2D，後空間
 
-### Market Size
+### 市場規模
 
-| Segment | 2026 Value | Growth |
-|---------|-----------|--------|
-| AI Orchestration Tools | $13.5B | 22.3% CAGR |
-| Autonomous AI Agents | $8.5B | 45.8% CAGR to $50.3B by 2030 |
-| Extended Reality | $10.64B | 40.95% CAGR |
-| Spatial Computing (broad) | $170-220B | Varies by definition |
+| 區段 | 2026 年價值 | 成長 |
+|------|------------|------|
+| AI 協調工具 | 135 億美元 | 年複合成長率 22.3% |
+| 自主 AI Agents | 85 億美元 | 年複合成長率 45.8%，2030 年達 503 億美元 |
+| 延展實境 | 106.4 億美元 | 年複合成長率 40.95% |
+| 空間運算（廣義） | 1,700-2,200 億美元 | 依定義而異 |
 
-### Competitive Landscape
+### 競爭格局
 
-**AI Agent Orchestration (all 2D):**
+**AI Agent 協調（全為 2D）：**
 
-| Tool | Strength | UX Gap |
-|------|----------|--------|
-| LangChain/LangSmith | Graph-based orchestration, $39/user/mo | Flat dashboard; complex graphs unreadable at scale |
-| CrewAI | 100K+ developers, fast execution | CLI-first, minimal visual tooling |
-| Microsoft Agent Framework | Enterprise integration | Embedded in Azure portal, no standalone UI |
-| n8n | Visual workflow builder, $20-50/mo | 2D canvas struggles with agent relationships |
-| Flowise | Drag-and-drop AI flows | Limited to linear flows, no multi-agent monitoring |
+| 工具 | 優勢 | UX 缺口 |
+|------|------|---------|
+| LangChain/LangSmith | 圖形化協調，$39/用戶/月 | 扁平儀表板；大規模圖形難以閱讀 |
+| CrewAI | 100K+ 開發者，快速執行 | CLI 優先，視覺工具極少 |
+| Microsoft Agent Framework | 企業整合 | 嵌入 Azure 入口網站，無獨立 UI |
+| n8n | 視覺工作流程建構器，$20-50/月 | 2D 畫布難以呈現 agent 關係 |
+| Flowise | 拖放式 AI 流程 | 僅限線性流程，無多 agent 監控 |
 
-**"Mission Control" Products (emerging, all 2D):**
-- cmd-deck: Kanban board for AI coding agents
-- Supervity Agent Command Center: Enterprise observability
-- OpenClaw Command Center: Agent fleet management
-- Mission Control AI: Synthetic workers management
-- Mission Control HQ: Squad-based coordination
+**「任務控制」產品（新興，全為 2D）：**
+- cmd-deck：AI 程式碼 agent 的看板
+- Supervity Agent Command Center：企業可觀測性
+- OpenClaw Command Center：Agent 艦隊管理
+- Mission Control AI：合成工作者管理
+- Mission Control HQ：小隊式協調
 
-**The gap:** Products are either spatial-but-not-AI-focused, or AI-focused-but-flat-2D. No product sits at the intersection.
+**缺口：** 產品不是「空間但不以 AI 為核心」，就是「以 AI 為核心但僅有扁平 2D」。沒有產品位於交匯點。
 
-### Vision Pro Reality Check
+### Vision Pro 現實查核
 
-- Installed base: ~1M units globally (sales declined 95% from launch)
-- Apple has shifted focus to lightweight AR glasses
-- Only ~3,000 VisionOS-specific apps exist
-- **Implication:** Do NOT lead with VisionOS. Lead with web, add WebXR, native VisionOS last.
+- 安裝量：全球約 100 萬台（銷售量從上市時下降 95%）
+- Apple 已將重心轉向輕量 AR 眼鏡
+- 僅存約 3,000 個 VisionOS 專用應用
+- **意涵：** 不要以 VisionOS 為主打。先做 Web，加入 WebXR，VisionOS 原生最後。
 
-### WebXR as the Distribution Unlock
+### WebXR 作為分發突破口
 
-- Safari adopted WebXR Device API in late 2025
-- 40% increase in WebXR adoption in 2026
-- WebGPU delivers near-native rendering in browsers
-- Android XR supports WebXR and OpenXR standards
+- Safari 在 2025 年底採用 WebXR Device API
+- 2026 年 WebXR 採用率增長 40%
+- WebGPU 在瀏覽器中提供接近原生的渲染效能
+- Android XR 支援 WebXR 和 OpenXR 標準
 
-### Target Personas and Pricing
+### 目標人群與定價
 
-| Tier | Price | Target |
-|------|-------|--------|
-| Explorer | Free | Developers, solo builders (3 agents, WebXR viewer) |
-| Pro | $99/user/month | Small teams (25 agents, collaboration) |
-| Team | $249/user/month | Mid-market AI teams (unlimited agents, analytics) |
-| Enterprise | Custom ($2K-10K/mo) | Large enterprises (SSO, RBAC, on-prem, SLA) |
+| 層級 | 價格 | 目標 |
+|------|------|------|
+| Explorer | 免費 | 開發者、個人建構者（3 個 agents，WebXR 檢視器） |
+| Pro | $99/用戶/月 | 小型團隊（25 個 agents，協作功能） |
+| Team | $249/用戶/月 | 中型 AI 團隊（無限 agents，分析功能） |
+| Enterprise | 客製化（$2K-10K/月） | 大型企業（SSO、RBAC、地端部署、SLA） |
 
-### Recommended Phased Strategy
+### 建議的分階段策略
 
-1. **Months 1-6:** Build a premium 2D web dashboard with Three.js 2.5D capabilities. Target: 50 paying teams, $60K MRR.
-2. **Months 6-12:** Add optional WebXR spatial mode (browser-based). Target: 200 teams, $300K MRR.
-3. **Months 12-18:** Native VisionOS app only if spatial demand is validated. Target: 500 teams, $1M+ MRR.
+1. **第 1-6 個月：** 建構具備 Three.js 2.5D 能力的優質 2D 網頁儀表板。目標：50 個付費團隊，$60K MRR。
+2. **第 6-12 個月：** 加入可選的 WebXR 空間模式（瀏覽器式）。目標：200 個團隊，$300K MRR。
+3. **第 12-18 個月：** 僅在空間需求經驗證後才開發原生 VisionOS 應用。目標：500 個團隊，$1M+ MRR。
 
-### Key Risks
+### 關鍵風險
 
-| Risk | Severity |
-|------|----------|
-| Vision Pro installed base is critically small | HIGH |
-| "Spatial solution in search of a problem" -- is 3D actually 10x better than 2D? | HIGH |
-| Crowded "mission control" positioning (5+ products already) | MODERATE |
-| Enterprise spatial computing adoption still early | MODERATE |
-| Integration complexity across AI frameworks | MODERATE |
+| 風險 | 嚴重性 |
+|------|--------|
+| Vision Pro 安裝量極小 | 高 |
+| 「尋找問題的空間解決方案」— 3D 真的比 2D 好 10 倍嗎？ | 高 |
+| 「任務控制」定位擁擠（已有 5+ 產品） | 中 |
+| 企業空間運算採用仍處早期 | 中 |
+| 跨 AI 框架的整合複雜度 | 中 |
 
-### Sources
+### 來源
 
 - [MarketsandMarkets - AI Orchestration Market](https://www.marketsandmarkets.com/Market-Reports/ai-orchestration-market-148121911.html)
 - [Deloitte - AI Agent Orchestration Predictions 2026](https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/ai-agent-orchestration.html)
@@ -136,152 +136,152 @@ The agency has deep spatial computing expertise (XR developers, VisionOS enginee
 
 ---
 
-## 3. Technical Architecture
+## 3. 技術架構
 
-**Agent:** Backend Architect
+**Agent：** Backend Architect
 
-### System Overview
+### 系統概覽
 
-An 8-service architecture with clear ownership boundaries, designed for horizontal scaling and provider-agnostic AI integration.
+一個 8 服務架構，具備清晰的職責邊界，設計為水平擴展且不綁定特定 AI 供應商。
 
 ```
 +------------------------------------------------------------------+
-|                     CLIENT TIER                                   |
-|  VisionOS Native (Swift/RealityKit)  |  WebXR (React Three Fiber) |
+|                     客戶端層                                       |
+|  VisionOS 原生 (Swift/RealityKit)  |  WebXR (React Three Fiber)    |
 +------------------------------------------------------------------+
                               |
 +-----------------------------v------------------------------------+
-|                      API GATEWAY (Kong / AWS API GW)              |
-|  Rate limiting | JWT validation | WebSocket upgrade | TLS        |
+|                      API 閘道 (Kong / AWS API GW)                 |
+|  速率限制 | JWT 驗證 | WebSocket 升級 | TLS                       |
 +------------------------------------------------------------------+
                               |
 +------------------------------------------------------------------+
-|                      SERVICE TIER                                 |
-|  Auth | Workspace | Workflow | Orchestration (Rust) |             |
-|  Collaboration (Yjs CRDT) | Streaming (WS) | Plugin | Billing    |
+|                      服務層                                       |
+|  驗證 | 工作區 | 工作流程 | 協調 (Rust) |                          |
+|  協作 (Yjs CRDT) | 串流 (WS) | 外掛 | 計費                       |
 +------------------------------------------------------------------+
                               |
 +------------------------------------------------------------------+
-|                      DATA TIER                                    |
-|  PostgreSQL 16 | Redis 7 Cluster | S3 | ClickHouse | NATS        |
+|                      資料層                                       |
+|  PostgreSQL 16 | Redis 7 Cluster | S3 | ClickHouse | NATS         |
 +------------------------------------------------------------------+
                               |
 +------------------------------------------------------------------+
-|                    AI PROVIDER TIER                                |
-|  OpenAI | Anthropic | Google | Local Models | Custom Plugins      |
+|                    AI 供應商層                                     |
+|  OpenAI | Anthropic | Google | 本地模型 | 自訂外掛                 |
 +------------------------------------------------------------------+
 ```
 
-### Tech Stack
+### 技術堆疊
 
-| Component | Technology | Rationale |
-|-----------|------------|-----------|
-| Orchestration Engine | **Rust** | Sub-ms scheduling, zero GC pauses, memory safety for agent sandboxing |
-| API Services | TypeScript / NestJS | Developer velocity for CRUD-heavy services |
-| VisionOS Client | Swift 6, SwiftUI, RealityKit | First-class spatial computing with Liquid Glass |
-| WebXR Client | TypeScript, React Three Fiber | Production-grade WebXR with React component model |
-| Message Broker | NATS JetStream | Lightweight, exactly-once delivery, simpler than Kafka |
-| Collaboration | Yjs (CRDT) + WebRTC | Conflict-free concurrent 3D graph editing |
-| Primary Database | PostgreSQL 16 | JSONB for flexible configs, Row-Level Security for tenant isolation |
+| 元件 | 技術 | 理由 |
+|------|------|------|
+| 協調引擎 | **Rust** | 亞毫秒排程、零 GC 暫停、Agent 沙箱的記憶體安全 |
+| API 服務 | TypeScript / NestJS | CRUD 密集型服務的開發速度 |
+| VisionOS 客戶端 | Swift 6, SwiftUI, RealityKit | 搭配 Liquid Glass 的一流空間運算 |
+| WebXR 客戶端 | TypeScript, React Three Fiber | 具備 React 元件模型的生產級 WebXR |
+| 訊息代理 | NATS JetStream | 輕量、恰好一次投遞、比 Kafka 簡單 |
+| 協作 | Yjs (CRDT) + WebRTC | 無衝突的並行 3D 圖形編輯 |
+| 主要資料庫 | PostgreSQL 16 | JSONB 支援靈活配置、行級安全實現租戶隔離 |
 
-### Core Data Model
+### 核心資料模型
 
-14 tables covering:
-- **Identity & Access:** users, workspaces, team_memberships, api_keys
-- **Workflows:** workflows, workflow_versions, nodes, edges
-- **Executions:** executions, execution_steps, step_output_chunks
-- **Collaboration:** collaboration_sessions, session_participants
-- **Credentials:** provider_credentials (AES-256-GCM encrypted)
-- **Billing:** subscriptions, usage_records
-- **Audit:** audit_log (append-only)
+14 張資料表涵蓋：
+- **身份與存取：** users、workspaces、team_memberships、api_keys
+- **工作流程：** workflows、workflow_versions、nodes、edges
+- **執行：** executions、execution_steps、step_output_chunks
+- **協作：** collaboration_sessions、session_participants
+- **憑證：** provider_credentials（AES-256-GCM 加密）
+- **計費：** subscriptions、usage_records
+- **稽核：** audit_log（僅追加）
 
-### Node Type Registry
+### 節點類型登記
 
 ```
-Built-in Node Types:
-  ai_agent          -- Calls an AI provider with a prompt
-  prompt_template   -- Renders a template with variables
-  conditional       -- Routes based on expression
-  transform         -- Sandboxed code snippet (JS/Python)
-  input / output    -- Workflow entry/exit points
-  human_review      -- Pauses for human approval
-  loop              -- Repeats subgraph
-  parallel_split    -- Fans out to branches
-  parallel_join     -- Waits for branches
-  webhook_trigger   -- External HTTP trigger
-  delay             -- Timed pause
+內建節點類型：
+  ai_agent          -- 以提示詞呼叫 AI 供應商
+  prompt_template   -- 以變數渲染模板
+  conditional       -- 根據表達式路由
+  transform         -- 沙箱化程式碼片段 (JS/Python)
+  input / output    -- 工作流程進入/退出點
+  human_review      -- 暫停等待人工審核
+  loop              -- 重複子圖
+  parallel_split    -- 扇出至分支
+  parallel_join     -- 等待分支完成
+  webhook_trigger   -- 外部 HTTP 觸發器
+  delay             -- 定時暫停
 ```
 
-### WebSocket Channels
+### WebSocket 通道
 
-Real-time streaming via WSS with:
-- Per-channel sequence numbers for ordering
-- Gap detection with replay requests
-- Snapshot recovery when >1000 events behind
-- Client-side throttling for lower-powered devices
+透過 WSS 進行即時串流：
+- 每通道序號確保排序
+- 缺口偵測與重播請求
+- 落後 >1000 事件時的快照恢復
+- 客戶端節流用於較低效能裝置
 
-### Security Architecture
+### 安全架構
 
-| Layer | Mechanism |
-|-------|-----------|
-| User Auth | OAuth 2.0 (GitHub, Google, Apple) + email/password + optional TOTP MFA |
-| API Keys | SHA-256 hashed, scoped, optional expiry |
-| Service-to-Service | mTLS via service mesh |
-| WebSocket Auth | One-time tickets with 30-second expiry |
-| Credential Storage | Envelope encryption (AES-256-GCM + AWS KMS) |
-| Code Sandboxing | gVisor/Firecracker microVMs (no network, 256MB RAM, 30s CPU) |
-| Tenant Isolation | PostgreSQL Row-Level Security + S3 IAM policies + NATS subject scoping |
+| 層級 | 機制 |
+|------|------|
+| 使用者驗證 | OAuth 2.0 (GitHub, Google, Apple) + 電子郵件/密碼 + 可選 TOTP MFA |
+| API 金鑰 | SHA-256 雜湊、範圍限定、可選到期 |
+| 服務間通訊 | 透過服務網格的 mTLS |
+| WebSocket 驗證 | 一次性票據，30 秒到期 |
+| 憑證儲存 | 信封加密 (AES-256-GCM + AWS KMS) |
+| 程式碼沙箱 | gVisor/Firecracker microVM（無網路、256MB RAM、30 秒 CPU） |
+| 租戶隔離 | PostgreSQL 行級安全 + S3 IAM 政策 + NATS 主題範圍 |
 
-### Scaling Targets
+### 擴展目標
 
-| Metric | Year 1 | Year 2 |
-|--------|--------|--------|
-| Concurrent agent executions | 5,000 | 50,000 |
-| WebSocket connections | 10,000 | 100,000 |
-| P95 API latency | < 150ms | < 100ms |
-| P95 WS event latency | < 80ms | < 50ms |
+| 指標 | 第一年 | 第二年 |
+|------|--------|--------|
+| 並行 agent 執行數 | 5,000 | 50,000 |
+| WebSocket 連線數 | 10,000 | 100,000 |
+| P95 API 延遲 | < 150ms | < 100ms |
+| P95 WS 事件延遲 | < 80ms | < 50ms |
 
-### MVP Phases
+### MVP 階段
 
-1. **Weeks 1-6:** 2D web editor, sequential execution, OpenAI + Anthropic adapters
-2. **Weeks 7-12:** WebXR 3D mode, parallel execution, hand tracking, RBAC
-3. **Weeks 13-20:** Multi-user collaboration, VisionOS native, billing
-4. **Weeks 21-30:** Enterprise SSO, plugin SDK, SOC 2, scale hardening
+1. **第 1-6 週：** 2D 網頁編輯器、序列執行、OpenAI + Anthropic 適配器
+2. **第 7-12 週：** WebXR 3D 模式、平行執行、手勢追蹤、RBAC
+3. **第 13-20 週：** 多用戶協作、VisionOS 原生、計費
+4. **第 21-30 週：** 企業 SSO、外掛 SDK、SOC 2、規模強化
 
 ---
 
-## 4. Brand Strategy
+## 4. 品牌策略
 
-**Agent:** Brand Guardian
+**Agent：** Brand Guardian
 
-### Positioning
+### 品牌定位
 
-**Category creation over category competition.** Nexus Spatial defines a new category -- **Spatial AI Operations (SpatialAIOps)** -- rather than fighting for position in the crowded AI observability dashboard space.
+**創造類別而非競爭類別。** Nexus Spatial 定義了一個新類別 — **空間 AI 營運 (SpatialAIOps)** — 而非在擁擠的 AI 可觀測性儀表板空間中搶位。
 
-**Positioning statement:** For technical teams managing complex AI agent workflows, Nexus Spatial is the immersive 3D command center that provides spatial awareness of agent orchestration, unlike flat 2D dashboards, because spatial computing transforms monitoring from reading dashboards to inhabiting your infrastructure.
+**定位聲明：** 對於管理複雜 AI agent 工作流程的技術團隊而言，Nexus Spatial 是提供 agent 協調空間感知的沉浸式 3D 指揮中心，有別於扁平 2D 儀表板，因為空間運算將監控從閱讀儀表板轉變為置身於你的基礎設施之中。
 
-### Name Validation
+### 名稱驗證
 
-"Nexus Spatial" is **validated as strong:**
-- "Nexus" connects to the NEXUS orchestration framework (Network of EXperts, Unified in Strategy)
-- "Nexus" independently means "central connection point" -- perfect for a command center
-- "Spatial" is the industry-standard descriptor Apple and the industry have normalized
-- Phonetically balanced: three syllables, then two
-- **Action needed:** Trademark clearance in Nice Classes 9, 42, and 38
+「Nexus Spatial」**驗證為強勢名稱：**
+- 「Nexus」連結到 NEXUS 協調框架 (Network of EXperts, Unified in Strategy)
+- 「Nexus」獨立含義為「核心連接點」— 完美契合指揮中心
+- 「Spatial」是 Apple 和業界已標準化的專業描述詞
+- 語音平衡：三個音節加兩個音節
+- **待辦事項：** 在尼斯分類第 9、42 和 38 類進行商標核查
 
-### Brand Personality: The Commander
+### 品牌人格：指揮官
 
-| Trait | Expression | Avoids |
-|-------|------------|--------|
-| **Authoritative** | Clear, direct, technically precise | Hype, superlatives, vague futurism |
-| **Composed** | Clean design, measured pacing, white space | Urgency for urgency's sake, chaos |
-| **Pioneering** | Quiet pride, understated references to the new paradigm | "Revolutionary," "game-changing" |
-| **Precise** | Exact specs, real metrics, honest requirements | Vague claims, marketing buzzwords |
-| **Approachable** | Natural interaction language, spatial metaphors | Condescension, gatekeeping |
+| 特質 | 表現 | 避免 |
+|------|------|------|
+| **權威** | 清晰、直接、技術精準 | 炒作、誇大詞、模糊的未來主義 |
+| **沉著** | 乾淨設計、節制節奏、留白 | 為急迫而急迫、混亂 |
+| **開創** | 低調自豪、含蓄提及新範式 | 「革命性」、「顛覆性」 |
+| **精確** | 準確規格、真實指標、誠實的需求 | 模糊宣稱、行銷術語 |
+| **親和** | 自然互動語言、空間隱喻 | 居高臨下、排他 |
 
-### Taglines (Ranked)
+### 標語（排名）
 
-1. **"Mission Control for the Agent Era"** -- RECOMMENDED PRIMARY
+1. **"Mission Control for the Agent Era"** — 建議主標語
 2. "See Your Agents in Space"
 3. "Orchestrate in Three Dimensions"
 4. "Where AI Operations Become Spatial"
@@ -289,41 +289,41 @@ Real-time streaming via WSS with:
 6. "The Dimension Your Dashboards Are Missing"
 7. "AI Agents Deserve More Than Flat Screens"
 
-### Color System
+### 色彩系統
 
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Deep Space Indigo | `#1B1F3B` | Foundational dark canvas, backgrounds |
-| Nexus Blue | `#4A7BF7` | Signature brand, primary actions |
-| Signal Cyan | `#00D4FF` | Spatial highlights, data connections |
-| Command Green | `#00E676` | Healthy systems, success |
-| Alert Amber | `#FFB300` | Warnings, attention needed |
-| Critical Red | `#FF3D71` | Errors, failures |
+| 顏色 | Hex 值 | 用途 |
+|------|--------|------|
+| Deep Space Indigo | `#1B1F3B` | 基底深色畫布、背景 |
+| Nexus Blue | `#4A7BF7` | 標誌品牌色、主要操作 |
+| Signal Cyan | `#00D4FF` | 空間高亮、資料連結 |
+| Command Green | `#00E676` | 健康系統、成功 |
+| Alert Amber | `#FFB300` | 警告、需要注意 |
+| Critical Red | `#FF3D71` | 錯誤、失敗 |
 
-Usage ratio: Deep Space Indigo 60%, Nexus Blue 25%, Signal Cyan 10%, Semantic 5%.
+使用比例：Deep Space Indigo 60%、Nexus Blue 25%、Signal Cyan 10%、語義色 5%。
 
-### Typography
+### 字型
 
-- **Primary:** Inter (UI, body, labels)
-- **Monospace:** JetBrains Mono (code, logs, agent output)
-- **Display:** Space Grotesk (marketing headlines only)
+- **主要字型：** Inter（UI、內文、標籤）
+- **等寬字型：** JetBrains Mono（程式碼、日誌、agent 輸出）
+- **展示字型：** Space Grotesk（僅用於行銷標題）
 
-### Logo Concepts
+### Logo 概念
 
-Three directions for exploration:
+三個探索方向：
 
-1. **The Spatial Nexus Mark** -- Convergent lines meeting at a glowing central node with subtle perspective depth
-2. **The Dimensional Window** -- Stylized viewport with perspective lines creating the effect of looking into 3D space
-3. **The Orbital Array** -- Orbital rings around a central point suggesting coordinated agents in motion
+1. **空間樞紐標誌** — 匯聚的線條交會於發光的中央節點，帶有微妙的透視深度
+2. **維度之窗** — 風格化的視窗，透過透視線創造出望向 3D 空間的效果
+3. **軌道陣列** — 圍繞中央點的軌道環，暗示協調運動中的 agents
 
-### Brand Values
+### 品牌價值
 
-- **Spatial Truthfulness** -- Honest representation of system state, no cosmetic smoothing
-- **Operational Gravity** -- Built for production, not demos
-- **Dimensional Generosity** -- WebXR ensures spatial value is accessible to everyone
-- **Composure Under Complexity** -- The more complex the system, the calmer the interface
+- **空間真實性** — 誠實呈現系統狀態，不做表面美化
+- **營運重力** — 為生產環境而建，非展示用
+- **維度慷慨** — WebXR 確保空間價值人人可及
+- **複雜中的沉著** — 系統越複雜，介面越平靜
 
-### Design Tokens
+### 設計 Tokens
 
 ```css
 :root {
@@ -349,90 +349,90 @@ Three directions for exploration:
 
 ---
 
-## 5. Go-to-Market & Growth
+## 5. 上市策略與成長
 
-**Agent:** Growth Hacker
+**Agent：** Growth Hacker
 
-### North Star Metric
+### 北極星指標
 
-**Weekly Active Pipelines (WAP)** -- unique agent pipelines with at least one spatial interaction in the past 7 days. Captures both creation and engagement, correlates with value, and isn't gameable.
+**每週活躍管線數 (WAP)** — 過去 7 天內至少有一次空間互動的獨立 agent 管線。同時捕捉建立和參與行為，與價值相關，且不可刷量。
 
-### Pricing
+### 定價
 
-| Tier | Annual | Monthly | Target |
-|------|--------|---------|--------|
-| Explorer | Free | Free | 3 pipelines, WebXR preview, community |
-| Pro | $29/user/mo | $39/user/mo | Unlimited pipelines, VisionOS, 30-day history |
-| Team | $59/user/mo | $79/user/mo | Collaboration, RBAC, SSO, 90-day history |
-| Enterprise | Custom (~$150+) | Custom | Dedicated infra, SLA, on-prem option |
+| 層級 | 年付 | 月付 | 目標 |
+|------|------|------|------|
+| Explorer | 免費 | 免費 | 3 條管線、WebXR 預覽、社群 |
+| Pro | $29/用戶/月 | $39/用戶/月 | 無限管線、VisionOS、30 天歷史 |
+| Team | $59/用戶/月 | $79/用戶/月 | 協作、RBAC、SSO、90 天歷史 |
+| Enterprise | 客製化 (~$150+) | 客製化 | 專屬基礎設施、SLA、地端部署選項 |
 
-Strategy: 14-day reverse trial (Pro features, then downgrade to Free). Target 5-8% free-to-paid conversion.
+策略：14 天反向試用（先享 Pro 功能，之後降為免費）。目標免費轉付費轉換率 5-8%。
 
-### 3-Phase GTM
+### 三階段 GTM
 
-**Phase 1: Founder-Led Sales (Months 1-3)**
-- Target: Individual AI engineers at startups who use LangChain/CrewAI and own Vision Pro
-- Tactics: DM 200 high-profile AI engineers, weekly build-in-public posts, 30-second demo clips
-- Channels: X/Twitter, LinkedIn, AI-focused Discord servers, Reddit
+**第一階段：創辦人主導銷售（第 1-3 個月）**
+- 目標：使用 LangChain/CrewAI 且擁有 Vision Pro 的新創公司個人 AI 工程師
+- 策略：私訊 200 位知名 AI 工程師、每週公開開發進展貼文、30 秒演示片段
+- 通路：X/Twitter、LinkedIn、AI 主題 Discord 伺服器、Reddit
 
-**Phase 2: Developer Community (Months 4-6)**
-- Product Hunt launch (timed for this phase, not Phase 1)
-- Hacker News Show HN, Dev.to articles, conference talks
-- Integration announcements with popular AI frameworks
+**第二階段：開發者社群（第 4-6 個月）**
+- Product Hunt 上線（安排在此階段，非第一階段）
+- Hacker News Show HN、Dev.to 文章、研討會演講
+- 與熱門 AI 框架的整合公告
 
-**Phase 3: Enterprise (Months 7-12)**
-- Apple enterprise referral pipeline, LinkedIn ABM campaigns
-- Enterprise case studies, analyst briefings (Gartner, Forrester)
-- First enterprise AE hire, SOC 2 compliance
+**第三階段：企業（第 7-12 個月）**
+- Apple 企業推薦管道、LinkedIn ABM 廣告活動
+- 企業案例研究、分析師簡報（Gartner、Forrester）
+- 第一位企業客戶經理招聘、SOC 2 合規
 
-### Growth Loops
+### 成長飛輪
 
-1. **"Wow Factor" Demo Loop** -- Spatial demos are inherently shareable. One-click "Share Spatial Preview" generates a WebXR link or video. Target K = 0.3-0.5.
-2. **Template Marketplace** -- Power users publish pipeline templates, discoverable via search, driving new signups.
-3. **Collaboration Seat Expansion** -- One engineer adopts, shares with teammates, team expands to paid plan (Slack/Figma playbook).
-4. **Integration-Driven Discovery** -- Listings in LangChain, n8n, OpenAI/Anthropic partner directories.
+1. **「哇效果」演示飛輪** — 空間演示天生具有分享性。一鍵「分享空間預覽」產生 WebXR 連結或影片。目標 K = 0.3-0.5。
+2. **模板市場** — 進階使用者發布管線模板，透過搜尋被發現，帶來新註冊。
+3. **協作座位擴展** — 一位工程師採用，分享給團隊成員，團隊升級為付費方案（Slack/Figma 戰術）。
+4. **整合驅動的發現** — 上架 LangChain、n8n、OpenAI/Anthropic 合作夥伴目錄。
 
-### Open-Source Strategy
+### 開源策略
 
-**Open-source (Apache 2.0):**
-- `nexus-spatial-sdk` -- TypeScript/Python SDK for connecting agent frameworks
-- `nexus-webxr-components` -- React Three Fiber component library for 3D pipelines
-- `nexus-agent-schemas` -- Standardized schemas for representing agent pipelines in 3D
+**開源 (Apache 2.0)：**
+- `nexus-spatial-sdk` — TypeScript/Python SDK，用於連接 agent 框架
+- `nexus-webxr-components` — React Three Fiber 元件庫，用於 3D 管線
+- `nexus-agent-schemas` — 標準化 schema，用於在 3D 中表示 agent 管線
 
-**Keep proprietary:** VisionOS native app, collaboration engine, enterprise features, hosted infrastructure.
+**保持專有：** VisionOS 原生應用、協作引擎、企業功能、託管基礎設施。
 
-### Revenue Targets
+### 營收目標
 
-| Metric | Month 6 | Month 12 |
-|--------|---------|----------|
+| 指標 | 第 6 個月 | 第 12 個月 |
+|------|-----------|------------|
 | MRR | $8K-15K | $50K-80K |
-| Free accounts | 5,000 | 15,000 |
-| Paid seats | 300 | 1,200 |
-| Discord members | 2,000 | 5,000 |
-| GitHub stars (SDK) | 500 | 2,000 |
+| 免費帳戶 | 5,000 | 15,000 |
+| 付費座位 | 300 | 1,200 |
+| Discord 成員 | 2,000 | 5,000 |
+| GitHub 星星 (SDK) | 500 | 2,000 |
 
-### First $50K Budget
+### 首筆 $50K 預算
 
-| Category | Amount | % |
-|----------|--------|---|
-| Content Production | $12,000 | 24% |
-| Developer Relations | $10,000 | 20% |
-| Paid Acquisition Testing | $8,000 | 16% |
-| Community & Tools | $5,000 | 10% |
-| Product Hunt & Launch | $3,000 | 6% |
-| Open Source Maintenance | $3,000 | 6% |
-| PR & Outreach | $4,000 | 8% |
-| Partnerships | $2,000 | 4% |
-| Reserve | $3,000 | 6% |
+| 類別 | 金額 | 佔比 |
+|------|------|------|
+| 內容製作 | $12,000 | 24% |
+| 開發者關係 | $10,000 | 20% |
+| 付費獲客測試 | $8,000 | 16% |
+| 社群與工具 | $5,000 | 10% |
+| Product Hunt 與上線 | $3,000 | 6% |
+| 開源維護 | $3,000 | 6% |
+| 公關與外展 | $4,000 | 8% |
+| 合作夥伴 | $2,000 | 4% |
+| 預備金 | $3,000 | 6% |
 
-### Key Partnerships
+### 關鍵合作夥伴
 
-- **Tier 1 (Critical):** Anthropic, OpenAI -- first-class API integrations, partner program listings
-- **Tier 2 (Adoption):** LangChain, CrewAI, n8n -- framework integrations, community cross-pollination
-- **Tier 3 (Platform):** Apple -- Vision Pro developer kit, App Store featuring, WWDC
-- **Tier 4 (Ecosystem):** GitHub, Hugging Face, Docker -- developer platform integrations
+- **第一級（關鍵）：** Anthropic、OpenAI — 一流 API 整合、合作夥伴計劃上架
+- **第二級（採用）：** LangChain、CrewAI、n8n — 框架整合、社群交叉傳播
+- **第三級（平台）：** Apple — Vision Pro 開發者套件、App Store 精選、WWDC
+- **第四級（生態系）：** GitHub、Hugging Face、Docker — 開發者平台整合
 
-### Sources
+### 來源
 
 - [AI Orchestration Market Size - MarketsandMarkets](https://www.marketsandmarkets.com/Market-Reports/ai-orchestration-market-148121911.html)
 - [Spatial Computing Market - Precedence Research](https://www.precedenceresearch.com/spatial-computing-market)
@@ -441,412 +441,412 @@ Strategy: 14-day reverse trial (Pro features, then downgrade to Free). Target 5-
 
 ---
 
-## 6. Customer Support Blueprint
+## 6. 客戶支援藍圖
 
-**Agent:** Support Responder
+**Agent：** Support Responder
 
-### Support Tier Structure
+### 支援層級結構
 
-| Attribute | Explorer (Free) | Builder (Pro) | Command (Enterprise) |
-|-----------|-----------------|---------------|---------------------|
-| First Response SLA | Best effort (48h) | 4 hours (business hours) | 30 min (P1), 2h (P2) |
-| Resolution SLA | 5 business days | 24h (P1/P2), 72h (P3) | 4h (P1), 12h (P2) |
-| Channels | Community, KB, AI assistant | + Live chat, email, video (2/mo) | + Dedicated Slack, named CSE, 24/7 |
-| Scope | General questions, docs | Technical troubleshooting, integrations | Full integration, custom design, compliance |
+| 屬性 | Explorer (免費) | Builder (Pro) | Command (Enterprise) |
+|------|----------------|---------------|---------------------|
+| 首次回應 SLA | 盡力而為 (48h) | 4 小時（營業時間） | 30 分鐘 (P1)，2 小時 (P2) |
+| 解決 SLA | 5 個工作天 | 24h (P1/P2)，72h (P3) | 4h (P1)，12h (P2) |
+| 通路 | 社群、知識庫、AI 助手 | + 即時聊天、電子郵件、視訊 (2 次/月) | + 專屬 Slack、指定 CSE、24/7 |
+| 範圍 | 一般問題、文件 | 技術疑難排解、整合 | 完整整合、客製設計、合規 |
 
-### Priority Definitions
+### 優先級定義
 
-- **P1 Critical:** Orchestration down, data loss risk, security breach
-- **P2 High:** Major feature degraded, workaround exists
-- **P3 Medium:** Non-blocking issues, minor glitches
-- **P4 Low:** Feature requests, cosmetic issues
+- **P1 關鍵：** 協調系統停擺、資料遺失風險、安全漏洞
+- **P2 高：** 主要功能降級、有替代方案
+- **P3 中：** 非阻塞問題、小故障
+- **P4 低：** 功能請求、外觀問題
 
-### The Nexus Guide: AI-Powered In-Product Support
+### Nexus Guide：AI 驅動的產品內支援
 
-The standout design decision: the support agent lives as a visible node **inside the user's spatial workspace**. It has full context of the user's layout, active agents, and recent errors.
+突出的設計決策：支援 agent 作為一個可見節點**存在於使用者的空間工作區內**。它擁有使用者佈局、活躍 agents 和近期錯誤的完整上下文。
 
-**Capabilities:**
-- Natural language Q&A about features
-- Real-time agent diagnostics ("Why is Agent X slow?")
-- Configuration suggestions ("Your topology would perform better as a mesh")
-- Guided spatial troubleshooting walkthroughs
-- Ticket creation with automatic context attachment
+**功能：**
+- 關於功能的自然語言問答
+- 即時 agent 診斷（「Agent X 為什麼這麼慢？」）
+- 配置建議（「你的拓撲結構改為 mesh 會表現更好」）
+- 引導式空間疑難排解
+- 自動附加上下文的工單建立
 
-**Self-Healing:**
+**自我修復：**
 
-| Scenario | Detection | Auto-Resolution |
-|----------|-----------|-----------------|
-| Agent infinite loop | CPU/token spike | Kill and restart with last good config |
-| Rendering frame drop | FPS below threshold | Reduce visual fidelity, suggest closing panels |
-| Credential expiry | API 401 responses | Prompt re-auth, pause agents gracefully |
-| Communication timeout | Latency spike | Reroute messages through alternate path |
+| 情境 | 偵測 | 自動解決 |
+|------|------|---------|
+| Agent 無限循環 | CPU/Token 飆升 | 終止並以最後正常配置重啟 |
+| 渲染掉幀 | FPS 低於閾值 | 降低視覺保真度、建議關閉面板 |
+| 憑證過期 | API 401 回應 | 提示重新驗證、優雅暫停 agents |
+| 通訊逾時 | 延遲飆升 | 透過備用路徑重新路由訊息 |
 
-### Onboarding Flow
+### 引導流程
 
-Adaptive onboarding based on user profiling:
+基於使用者分析的自適應引導：
 
-| AI Experience | Spatial Experience | Path |
-|---------------|-------------------|------|
-| Low | Low | Full guided tour (20 min) |
-| High | Low | Spatial-focused (12 min) |
-| Low | High | Agent-focused (12 min) |
-| High | High | Express setup (5 min) |
+| AI 經驗 | 空間經驗 | 路徑 |
+|---------|---------|------|
+| 低 | 低 | 完整引導 (20 分鐘) |
+| 高 | 低 | 空間聚焦 (12 分鐘) |
+| 低 | 高 | Agent 聚焦 (12 分鐘) |
+| 高 | 高 | 快速設定 (5 分鐘) |
 
-Critical first step: 60-second spatial calibration (hand tracking, gaze, comfort check) before any product interaction.
+關鍵第一步：在任何產品互動之前，進行 60 秒空間校準（手勢追蹤、凝視、舒適度檢查）。
 
-**Activation Milestone** (user is "onboarded" when they have):
-- Created at least one custom agent
-- Connected two or more agents in a topology
-- Anchored at least one monitoring dashboard
-- Returned for a third session
+**啟用里程碑**（使用者被視為「已引導」的條件）：
+- 已建立至少一個自訂 agent
+- 已在拓撲中連接兩個或更多 agents
+- 已錨定至少一個監控儀表板
+- 已回來第三次工作階段
 
-### Team Build
+### 團隊建設
 
-| Phase | Headcount | Roles |
-|-------|-----------|-------|
-| Months 0-6 | 4 | Head of CX, 2 Support Engineers, Technical Writer |
-| Months 6-12 | 8 | + 2 Support Engineers, CSE, Community Manager, Ops Analyst |
-| Months 12-24 | 16 | + 4 Engineers (24/7), Spatial Specialist, Integration Specialist, KB Manager, Engineering Manager |
+| 階段 | 人數 | 職位 |
+|------|------|------|
+| 第 0-6 個月 | 4 | CX 主管、2 位支援工程師、技術寫作者 |
+| 第 6-12 個月 | 8 | + 2 位支援工程師、CSE、社群經理、營運分析師 |
+| 第 12-24 個月 | 16 | + 4 位工程師 (24/7)、空間專家、整合專家、知識庫經理、工程經理 |
 
-### Community: Discord-First
+### 社群：Discord 優先
 
 ```
 NEXUS SPATIAL DISCORD
-  INFORMATION: #announcements, #changelog, #status
-  SUPPORT: #help-getting-started, #help-agents, #help-spatial
-  DISCUSSION: #general, #show-your-workspace, #feature-requests
-  PLATFORMS: #visionos, #webxr, #api-and-sdk
-  EVENTS: office-hours (weekly voice), community-demos (monthly)
-  PRO MEMBERS: #pro-lounge, #beta-testing
-  ENTERPRISE: per-customer private channels
+  資訊區：#announcements, #changelog, #status
+  支援區：#help-getting-started, #help-agents, #help-spatial
+  討論區：#general, #show-your-workspace, #feature-requests
+  平台區：#visionos, #webxr, #api-and-sdk
+  活動區：office-hours (每週語音), community-demos (每月)
+  PRO 會員：#pro-lounge, #beta-testing
+  企業：每客戶專屬私有頻道
 ```
 
-**Champions Program ("Nexus Navigators"):** 5-10 initial power users with Navigator badge, direct Slack with product team, free Pro tier, early feature access, and annual summit.
+**冠軍計劃（「Nexus 領航員」）：** 5-10 位初始進階使用者，擁有領航員徽章、與產品團隊直接 Slack 溝通、免費 Pro 方案、搶先體驗功能、年度峰會。
 
 ---
 
-## 7. UX Research & Design Direction
+## 7. UX 研究與設計方向
 
-**Agent:** UX Researcher
+**Agent：** UX Researcher
 
-### User Personas
+### 使用者人物誌
 
-**Maya Chen -- AI Platform Engineer (32, San Francisco)**
-- Manages 15-30 active agent workflows, uses n8n + LangSmith
-- Spends 40% of time debugging agent failures via log inspection
-- Skeptical of spatial computing: "Is this actually faster, or just cooler?"
-- Primary need: Reduce mean-time-to-diagnosis from 45 min to under 10
+**Maya Chen — AI 平台工程師（32 歲，舊金山）**
+- 管理 15-30 個活躍 agent 工作流程，使用 n8n + LangSmith
+- 花費 40% 時間透過日誌檢查除錯 agent 故障
+- 對空間運算持懷疑態度：「這真的更快，還是只是更酷？」
+- 主要需求：將平均診斷時間從 45 分鐘降低到 10 分鐘以內
 
-**David Okoro -- Technical Product Manager (38, London)**
-- Reviews and approves agent workflow designs, presents to C-suite
-- Cannot meaningfully contribute to workflow reviews because tools require code-level understanding
-- Primary need: Understand and communicate agent architectures without reading code
+**David Okoro — 技術產品經理（38 歲，倫敦）**
+- 審查和核准 agent 工作流程設計，向 C-suite 報告
+- 因為工具需要程式碼級理解而無法有效參與工作流程審查
+- 主要需求：不需閱讀程式碼即可理解和傳達 agent 架構
 
-**Dr. Amara Osei -- Research Scientist (45, Zurich)**
-- Designs multi-agent research workflows with A/B comparisons
-- Has 12 variations of the same pipeline with no good way to compare
-- Primary need: Side-by-side comparison of variant pipelines in 3D space
+**Dr. Amara Osei — 研究科學家（45 歲，蘇黎世）**
+- 設計含 A/B 比較的多 agent 研究工作流程
+- 有 12 個相同管線的變體卻沒有好方法比較
+- 主要需求：在 3D 空間中並排比較管線變體
 
-**Jordan Rivera -- Creative Technologist (27, Austin)**
-- Daily Vision Pro user, builds AI-powered art installations
-- Wants tools that feel like instruments, not dashboards
-- Primary need: Build agent workflows quickly with immediate spatial feedback
+**Jordan Rivera — 創意科技師（27 歲，奧斯汀）**
+- 每日使用 Vision Pro，建構 AI 驅動的藝術裝置
+- 想要感覺像樂器而非儀表板的工具
+- 主要需求：快速建構 agent 工作流程並立即獲得空間回饋
 
-### Key Finding: Debugging Is the Killer Use Case
+### 關鍵發現：除錯是殺手級使用案例
 
-Spatial overlay of runtime traces on workflow structure solves a real, quantified pain point that no 2D tool handles well. This workflow should receive the most design and engineering investment.
+在工作流程結構上疊加執行時追蹤的空間覆蓋，解決了一個真實且可量化的痛點，沒有任何 2D 工具能很好地處理。此工作流程應獲得最多的設計和工程投資。
 
-### Critical Design Insight
+### 關鍵設計洞察
 
-Spatial adds value for **structural** tasks (placing, connecting, rearranging nodes) but creates friction for **parameter** tasks (text entry, configuration). The interface must seamlessly blend spatial and 2D modes -- 2D panels anchored to spatial positions.
+空間為**結構性**任務（放置、連接、重新排列節點）增值，但為**參數**任務（文字輸入、配置）帶來摩擦。介面必須無縫混合空間和 2D 模式 — 錨定在空間位置的 2D 面板。
 
-### 7 Design Principles
+### 7 項設計原則
 
-1. **Spatial Earns Its Place** -- If 2D is clearer, use 2D. Every review should ask: "Would this be better flat?"
-2. **Glanceable Before Inspectable** -- Critical info perceivable in under 2 seconds via color, size, motion, position
-3. **Hands-Free Is the Baseline** -- Gaze + voice covers all read/navigate operations; hands add precision but aren't required
-4. **Respect Cognitive Gravity** -- Extend 2D mental models (left-to-right flow), don't replace them; z-axis adds layering
-5. **Progressive Spatial Complexity** -- New users start nearly-2D; spatial capabilities reveal as confidence grows
-6. **Physical Metaphors, Digital Capabilities** -- Nodes are "picked up" (physical) but also duplicated and versioned (digital)
-7. **Silence Is a Feature** -- Healthy systems feel calm; color and motion signal deviation from normal
+1. **空間必須證明其價值** — 如果 2D 更清晰，就用 2D。每次審查都應問：「這用扁平的方式會更好嗎？」
+2. **先一眼可見，後可深入** — 關鍵資訊在 2 秒內可透過顏色、大小、動態、位置感知
+3. **免手操作是基線** — 凝視 + 語音涵蓋所有閱讀/導航操作；手勢增加精確度但非必須
+4. **尊重認知慣性** — 延伸 2D 心理模型（從左到右的流向），不取代它們；z 軸增加分層
+5. **漸進式空間複雜度** — 新使用者起步近乎 2D；空間能力隨信心增長而揭示
+6. **物理隱喻，數位能力** — 節點可「拿起」（物理）但也可複製和版本控制（數位）
+7. **靜默是特性** — 健康系統感覺平靜；顏色和動態信號偏離正常
 
-### Navigation Paradigm: 4-Level Semantic Zoom
+### 導航範式：4 級語義縮放
 
-| Level | What You See |
-|-------|-------------|
-| Fleet View | All workflows as abstract shapes, color-coded by status |
-| Workflow View | Node graph with labels and connections |
-| Node View | Expanded configuration, recent I/O, status metrics |
-| Trace View | Full execution trace with data inspection |
+| 級別 | 你看到什麼 |
+|------|-----------|
+| 艦隊視圖 | 所有工作流程以抽象形狀呈現，按狀態色彩編碼 |
+| 工作流程視圖 | 帶標籤和連接的節點圖 |
+| 節點視圖 | 展開的配置、近期 I/O、狀態指標 |
+| 追蹤視圖 | 完整執行追蹤與資料檢查 |
 
-### Competitive UX Summary
+### 競爭 UX 摘要
 
-| Capability | n8n | Flowise | LangSmith | Langflow | Nexus Spatial Target |
-|-----------|-----|---------|-----------|----------|---------------------|
-| Visual workflow building | A | B+ | N/A | A | A+ (spatial) |
-| Debugging/tracing | C+ | C | A | B | A+ (spatial overlay) |
-| Monitoring | B | C | A | B | A (spatial fleet) |
-| Collaboration | D | D | C | D | A (spatial co-presence) |
-| Large workflow scalability | C | C | B | C | A (3D space) |
+| 能力 | n8n | Flowise | LangSmith | Langflow | Nexus Spatial 目標 |
+|-----|-----|---------|-----------|----------|-------------------|
+| 視覺工作流程建構 | A | B+ | N/A | A | A+（空間） |
+| 除錯/追蹤 | C+ | C | A | B | A+（空間覆蓋） |
+| 監控 | B | C | A | B | A（空間艦隊） |
+| 協作 | D | D | C | D | A（空間共同在場） |
+| 大型工作流程可擴展性 | C | C | B | C | A（3D 空間） |
 
-### Accessibility Requirements
+### 無障礙需求
 
-- Every interaction achievable through at least two modalities
-- No information conveyed by color alone
-- High-contrast mode, reduced-motion mode, depth-flattening mode
-- Screen reader compatibility with spatial element descriptions
-- Session length warnings every 20-30 minutes
-- All core tasks completable seated, one-handed, within 30-degree movement cone
+- 每項互動至少可透過兩種方式達成
+- 不以顏色為唯一資訊傳達方式
+- 高對比模式、減少動態模式、深度平面化模式
+- 螢幕閱讀器相容，含空間元素描述
+- 每 20-30 分鐘提供工作階段時長提醒
+- 所有核心任務可在坐姿、單手、30 度活動範圍內完成
 
-### Research Plan (16 Weeks)
+### 研究計畫（16 週）
 
-| Phase | Weeks | Studies |
-|-------|-------|---------|
-| Foundational | 1-4 | Mental model interviews (15-20 participants), competitive task analysis |
-| Concept Validation | 5-8 | Wizard-of-Oz spatial prototype testing, 3D card sort for IA |
-| Usability Testing | 9-14 | First-use experience (20 users), 4-week longitudinal diary study, paired collaboration testing |
-| Accessibility Audit | 12-16 | Expert heuristic evaluation, testing with users with disabilities |
-
----
-
-## 8. Project Execution Plan
-
-**Agent:** Project Shepherd
-
-### Timeline: 35 Weeks (March 9 -- November 6, 2026)
-
-| Phase | Weeks | Duration | Goal |
-|-------|-------|----------|------|
-| Discovery & Research | W1-3 | 3 weeks | Validate feasibility, define scope |
-| Foundation | W4-9 | 6 weeks | Core infrastructure, both platform shells, design system |
-| MVP Build | W10-19 | 10 weeks | Single-user agent command center with orchestration |
-| Beta | W20-27 | 8 weeks | Collaboration, polish, harden, 50-100 beta users |
-| Launch | W28-31 | 4 weeks | App Store + web launch, marketing push |
-| Scale | W32-35+ | Ongoing | Plugin marketplace, advanced features, growth |
-
-### Critical Milestone: Week 12 (May 29)
-
-**First end-to-end workflow execution.** A user creates and runs a 3-node agent workflow in 3D. This is the moment the product proves its core value proposition. If this slips, everything downstream shifts.
-
-### First 6 Sprints (65 Tickets)
-
-**Sprint 1 (Mar 9-20):** VisionOS SDK audit, WebXR compatibility matrix, orchestration engine feasibility, stakeholder interviews, throwaway prototypes for both platforms.
-
-**Sprint 2 (Mar 23 - Apr 3):** Architecture decision records, MVP scope lock with MoSCoW, PRD v1.0, spatial UI pattern research, interaction model definition, design system kickoff.
-
-**Sprint 3 (Apr 6-17):** Monorepo setup, auth service (OAuth2), database schema, API gateway, VisionOS Xcode project init, WebXR project init, CI/CD pipelines.
-
-**Sprint 4 (Apr 20 - May 1):** WebSocket server + client SDKs, spatial window management, 3D component library, hand tracking input layer, teams CRUD, integration tests.
-
-**Sprint 5 (May 4-15):** Orchestration engine core (Rust), agent state machine, node graph renderers (both platforms), plugin interface v0, OpenAI provider plugin.
-
-**Sprint 6 (May 18-29):** Workflow persistence + versioning, DAG execution, real-time execution visualization, Anthropic provider plugin, eye tracking integration, spatial audio.
-
-### Team Allocation
-
-5 squads operating across phases:
-
-| Squad | Core Members | Active Phases |
-|-------|-------------|---------------|
-| Core Architecture | Backend Architect, XR Interface Architect, Senior Dev, VisionOS Engineer | Discovery through MVP |
-| Spatial Experience | XR Immersive Dev, XR Cockpit Specialist, Metal Engineer, UX Architect, UI Designer | Foundation through Beta |
-| Orchestration | AI Engineer, Backend Architect, Senior Dev, API Tester | MVP through Beta |
-| Platform Delivery | Frontend Dev, Mobile App Builder, VisionOS Engineer, DevOps | MVP through Launch |
-| Launch | Growth Hacker, Content Creator, App Store Optimizer, Visual Storyteller, Brand Guardian | Beta through Scale |
-
-### Top 5 Risks
-
-| Risk | Probability | Impact | Mitigation |
-|------|------------|--------|------------|
-| Apple rejects VisionOS app | Medium | Critical | Engage Apple Developer Relations Week 4, pre-review by Week 20 |
-| WebXR browser fragmentation | High | High | Browser support matrix Week 1, automated cross-browser tests |
-| Multi-user sync conflicts | Medium | High | CRDT-based sync (Yjs) from the start, prototype in Foundation |
-| Orchestration can't scale | Medium | Critical | Horizontal scaling from day one, load test at 10x by Week 22 |
-| RealityKit performance for 100+ nodes | Medium | High | Profile early, implement LOD culling, instanced rendering |
-
-### Budget: $121,500 -- $155,500 (Non-Personnel)
-
-| Category | Estimated Cost |
-|----------|---------------|
-| Cloud infrastructure (35 weeks) | $35,000 - $45,000 |
-| Hardware (3 Vision Pro, 2 Quest 3, Mac Studio) | $17,500 |
-| Licenses and services | $15,000 - $20,000 |
-| External services (legal, security, PR) | $30,000 - $45,000 |
-| AI API costs (dev/test) | $8,000 |
-| Contingency (15%) | $16,000 - $20,000 |
+| 階段 | 週次 | 研究 |
+|------|------|------|
+| 基礎 | 1-4 | 心理模型訪談（15-20 位參與者）、競爭任務分析 |
+| 概念驗證 | 5-8 | 綠野仙蹤法空間原型測試、3D 卡片排序用於資訊架構 |
+| 易用性測試 | 9-14 | 首次使用體驗（20 位使用者）、4 週追蹤日誌研究、配對協作測試 |
+| 無障礙稽核 | 12-16 | 專家啟發式評估、身心障礙使用者測試 |
 
 ---
 
-## 9. Spatial Interface Architecture
+## 8. 專案執行計畫
 
-**Agent:** XR Interface Architect
+**Agent：** Project Shepherd
 
-### The Command Theater
+### 時程：35 週（2026 年 3 月 9 日 — 11 月 6 日）
 
-The workspace is organized as a curved theater around the user:
+| 階段 | 週次 | 期間 | 目標 |
+|------|------|------|------|
+| 探索與研究 | W1-3 | 3 週 | 驗證可行性、定義範圍 |
+| 基礎建設 | W4-9 | 6 週 | 核心基礎設施、雙平台框架、設計系統 |
+| MVP 建構 | W10-19 | 10 週 | 具備協調功能的單用戶 agent 指揮中心 |
+| Beta | W20-27 | 8 週 | 協作、打磨、強化、50-100 位 beta 使用者 |
+| 上線 | W28-31 | 4 週 | App Store + 網頁上線、行銷推播 |
+| 擴展 | W32-35+ | 持續 | 外掛市場、進階功能、成長 |
+
+### 關鍵里程碑：第 12 週（5 月 29 日）
+
+**首次端到端工作流程執行。** 使用者在 3D 中建立並執行一個 3 節點 agent 工作流程。這是產品證明其核心價值主張的時刻。若此延遲，後續所有事項都將順延。
+
+### 前 6 個衝刺（65 張工單）
+
+**衝刺 1（3 月 9-20 日）：** VisionOS SDK 稽核、WebXR 相容性矩陣、協調引擎可行性、利害關係人訪談、雙平台的一次性原型。
+
+**衝刺 2（3 月 23 日 — 4 月 3 日）：** 架構決策記錄、MoSCoW MVP 範圍鎖定、PRD v1.0、空間 UI 模式研究、互動模型定義、設計系統啟動。
+
+**衝刺 3（4 月 6-17 日）：** Monorepo 設置、驗證服務 (OAuth2)、資料庫 schema、API 閘道、VisionOS Xcode 專案初始化、WebXR 專案初始化、CI/CD 管線。
+
+**衝刺 4（4 月 20 日 — 5 月 1 日）：** WebSocket 伺服器 + 客戶端 SDK、空間視窗管理、3D 元件庫、手勢追蹤輸入層、團隊 CRUD、整合測試。
+
+**衝刺 5（5 月 4-15 日）：** 協調引擎核心 (Rust)、agent 狀態機、節點圖渲染器（雙平台）、外掛介面 v0、OpenAI 供應商外掛。
+
+**衝刺 6（5 月 18-29 日）：** 工作流程持久化 + 版本控制、DAG 執行、即時執行視覺化、Anthropic 供應商外掛、眼動追蹤整合、空間音效。
+
+### 團隊配置
+
+5 個小隊跨階段運作：
+
+| 小隊 | 核心成員 | 活躍階段 |
+|------|---------|---------|
+| 核心架構 | 後端架構師、XR 介面架構師、資深開發者、VisionOS 工程師 | 探索到 MVP |
+| 空間體驗 | XR 沉浸式開發者、XR 座艙專家、Metal 工程師、UX 架構師、UI 設計師 | 基礎建設到 Beta |
+| 協調 | AI 工程師、後端架構師、資深開發者、API 測試師 | MVP 到 Beta |
+| 平台交付 | 前端開發者、行動應用開發者、VisionOS 工程師、DevOps | MVP 到上線 |
+| 上線 | 成長駭客、內容創作者、App Store 優化師、視覺說書人、品牌守護者 | Beta 到擴展 |
+
+### 前 5 大風險
+
+| 風險 | 機率 | 影響 | 緩解措施 |
+|------|------|------|---------|
+| Apple 拒絕 VisionOS 應用 | 中 | 關鍵 | 第 4 週聯繫 Apple Developer Relations，第 20 週前進行預審 |
+| WebXR 瀏覽器碎片化 | 高 | 高 | 第 1 週建立瀏覽器支援矩陣、自動化跨瀏覽器測試 |
+| 多用戶同步衝突 | 中 | 高 | 從一開始使用 CRDT 同步 (Yjs)、基礎建設階段原型 |
+| 協調無法擴展 | 中 | 關鍵 | 從第一天起水平擴展、第 22 週進行 10 倍負載測試 |
+| RealityKit 100+ 節點效能 | 中 | 高 | 提前效能分析、實作 LOD 剔除、實例化渲染 |
+
+### 預算：$121,500 — $155,500（非人事）
+
+| 類別 | 預估成本 |
+|------|---------|
+| 雲端基礎設施（35 週） | $35,000 - $45,000 |
+| 硬體（3 台 Vision Pro、2 台 Quest 3、Mac Studio） | $17,500 |
+| 授權與服務 | $15,000 - $20,000 |
+| 外部服務（法律、安全、公關） | $30,000 - $45,000 |
+| AI API 費用（開發/測試） | $8,000 |
+| 預備金 (15%) | $16,000 - $20,000 |
+
+---
+
+## 9. 空間介面架構
+
+**Agent：** XR Interface Architect
+
+### 指揮劇場
+
+工作空間以使用者為中心，組織為弧形劇場：
 
 ```
-                        OVERVIEW CANOPY
-                     (pipeline topology)
+                        概覽天幕
+                     (管線拓撲)
                     ~~~~~~~~~~~~~~~~~~~~~~~~
                    /                        \
-                  /     FOCUS ARC (120 deg)   \
-                 /    primary node graph work   \
+                  /     聚焦弧 (120 度)       \
+                 /    主要節點圖工作區          \
                 /________________________________\
                |                                  |
-    LEFT       |        USER POSITION             |       RIGHT
-    UTILITY    |        (origin 0,0,0)            |       UTILITY
-    RAIL       |                                  |       RAIL
+    左側       |        使用者位置               |       右側
+    工具欄     |        (原點 0,0,0)             |       工具欄
+               |                                  |
                |__________________________________|
                 \                                /
-                 \      SHELF (below sightline) /
-                  \   agent status, quick tools/
+                 \      層架 (視線下方)          /
+                  \   agent 狀態、快捷工具     /
                    \_________________________ /
 ```
 
-- **Focus Arc** (120 degrees, 1.2-2.0m): Primary node graph workspace
-- **Overview Canopy** (above, 2.5-4.0m): Miniature pipeline topology + health heatmap
-- **Utility Rails** (left/right flanks): Agent library, monitoring, logs
-- **Shelf** (below sightline, 0.8-1.0m): Run/stop, undo/redo, quick tools
+- **聚焦弧**（120 度，1.2-2.0m）：主要節點圖工作空間
+- **概覽天幕**（上方，2.5-4.0m）：管線拓撲縮圖 + 健康熱力圖
+- **工具欄**（左右兩側）：Agent 庫、監控、日誌
+- **層架**（視線下方，0.8-1.0m）：執行/停止、復原/重做、快捷工具
 
-### Three-Layer Depth System
+### 三層深度系統
 
-| Layer | Depth | Content | Opacity |
-|-------|-------|---------|---------|
-| Foreground | 0.8 - 1.2m | Active panels, inspectors, modals | 100% |
-| Midground | 1.2 - 2.5m | Node graph, connections, workspace | 100% |
-| Background | 2.5 - 5.0m | Overview map, ambient status | 40-70% |
+| 層級 | 深度 | 內容 | 不透明度 |
+|------|------|------|---------|
+| 前景 | 0.8 - 1.2m | 活躍面板、檢查器、模態 | 100% |
+| 中景 | 1.2 - 2.5m | 節點圖、連接、工作空間 | 100% |
+| 背景 | 2.5 - 5.0m | 概覽地圖、環境狀態 | 40-70% |
 
-### Node Graph in 3D
+### 3D 節點圖
 
-**Data flows toward the user.** Nodes arrange along the z-axis by execution order:
+**資料朝使用者流動。** 節點沿 z 軸按執行順序排列：
 
 ```
-USER (here)
-  z=0.0m   [Output Nodes]     -- Results
-  z=0.3m   [Transform Nodes]  -- Processors
-  z=0.6m   [Agent Nodes]      -- LLM calls
-  z=0.9m   [Retrieval Nodes]  -- RAG, APIs
-  z=1.2m   [Input Nodes]      -- Triggers
+使用者 (此處)
+  z=0.0m   [輸出節點]     -- 結果
+  z=0.3m   [轉換節點]     -- 處理器
+  z=0.6m   [Agent 節點]   -- LLM 呼叫
+  z=0.9m   [擷取節點]     -- RAG、API
+  z=1.2m   [輸入節點]     -- 觸發器
 ```
 
-Parallel branches spread horizontally (x-axis). Conditional branches spread vertically (y-axis).
+平行分支水平展開（x 軸）。條件分支垂直展開（y 軸）。
 
-**Node representation (3 LODs):**
-- **LOD-0** (resting, >1.5m): 12x8cm frosted glass rectangle with type icon, name, status glow
-- **LOD-1** (hover, 400ms gaze): Expands to 14x10cm, reveals ports, last-run info
-- **LOD-2** (selected): Slides to foreground, expands to 30x40cm detail panel with live config editing
+**節點表示（3 個 LOD）：**
+- **LOD-0**（靜止，>1.5m）：12x8cm 毛玻璃矩形，含類型圖示、名稱、狀態光暈
+- **LOD-1**（懸停，400ms 凝視）：擴展至 14x10cm，顯示端口、上次執行資訊
+- **LOD-2**（選中）：滑至前景，擴展至 30x40cm 詳細面板，含即時配置編輯
 
-**Connections as luminous tubes:**
-- 4mm diameter at rest, 8mm when carrying data
-- Color-coded by data type (white=text, cyan=structured, magenta=images, amber=audio, green=tool calls)
-- Animated particles show flow direction and speed
-- Auto-bundle when >3 run parallel between same layers
+**連接以發光管道呈現：**
+- 靜止時 4mm 直徑，攜帶資料時 8mm
+- 按資料類型色彩編碼（白色=文字、青色=結構化、洋紅=圖像、琥珀色=音訊、綠色=工具呼叫）
+- 動態粒子顯示流向和速度
+- 同層間 >3 條平行時自動捆束
 
-### 7 Agent States
+### 7 種 Agent 狀態
 
-| State | Edge Glow | Interior | Sound | Particles |
-|-------|-----------|----------|-------|-----------|
-| Idle | Steady green, low | Static frosted glass | None | None |
-| Queued | Pulsing amber, 1Hz | Faint rotation | None | Slow drift at input |
-| Running | Steady blue, medium | Animated shimmer | Soft spatial hum | Rapid flow on connections |
-| Streaming | Blue + output stream | Shimmer + text fragments | Hum | Text fragments flowing forward |
-| Completed | Flash white, then green | Static | Completion chime | None |
-| Error | Pulsing red, 2Hz | Red tint | Alert tone (once) | None |
-| Paused | Steady amber | Freeze-frame + pause icon | None | Frozen in place |
+| 狀態 | 邊緣光暈 | 內部 | 音效 | 粒子 |
+|------|---------|------|------|------|
+| 閒置 | 穩定綠色、低亮度 | 靜態毛玻璃 | 無 | 無 |
+| 排隊 | 脈動琥珀色、1Hz | 微弱旋轉 | 無 | 輸入端緩慢飄移 |
+| 執行中 | 穩定藍色、中亮度 | 動態微光 | 輕柔空間嗡鳴 | 連接上快速流動 |
+| 串流中 | 藍色 + 輸出串流 | 微光 + 文字片段 | 嗡鳴 | 文字片段向前流動 |
+| 已完成 | 白色閃光後轉綠 | 靜態 | 完成鈴聲 | 無 |
+| 錯誤 | 脈動紅色、2Hz | 紅色調 | 警示音（一次） | 無 |
+| 已暫停 | 穩定琥珀色 | 凍結畫面 + 暫停圖示 | 無 | 原地凍結 |
 
-### Interaction Model
+### 互動模型
 
-| Action | VisionOS | WebXR Controllers | Voice |
-|--------|----------|-------------------|-------|
-| Select node | Gaze + pinch | Point ray + trigger | "Select [name]" |
-| Move node | Pinch + drag | Grip + move | -- |
-| Connect ports | Pinch port + drag | Trigger port + drag | "Connect [A] to [B]" |
-| Pan workspace | Two-hand drag | Thumbstick | "Pan left/right" |
-| Zoom | Two-hand spread/pinch | Thumbstick push/pull | "Zoom in/out" |
-| Inspect node | Pinch + pull toward self | Double-trigger | "Inspect [name]" |
-| Run pipeline | Tap Shelf button | Trigger button | "Run pipeline" |
-| Undo | Two-finger double-tap | B button | "Undo" |
+| 操作 | VisionOS | WebXR 控制器 | 語音 |
+|------|----------|-------------|------|
+| 選擇節點 | 凝視 + 捏合 | 指向射線 + 扳機 | "Select [名稱]" |
+| 移動節點 | 捏合 + 拖曳 | 握持 + 移動 | — |
+| 連接端口 | 捏合端口 + 拖曳 | 扳機端口 + 拖曳 | "Connect [A] to [B]" |
+| 平移工作區 | 雙手拖曳 | 搖桿 | "Pan left/right" |
+| 縮放 | 雙手張開/捏合 | 搖桿推/拉 | "Zoom in/out" |
+| 檢查節點 | 捏合 + 向自己拉 | 雙擊扳機 | "Inspect [名稱]" |
+| 執行管線 | 點擊層架按鈕 | 扳機按鈕 | "Run pipeline" |
+| 復原 | 雙指雙擊 | B 按鈕 | "Undo" |
 
-### Collaboration Presence
+### 協作在場感
 
-Each collaborator represented by:
-- **Head proxy:** Translucent sphere with profile image, rotates with head orientation
-- **Hand proxies:** Ghosted hand models showing pinch/grab states
-- **Gaze cone:** Subtle 10-degree cone showing where they're looking
-- **Name label:** Billboard-rendered, shows current action ("editing Node X")
+每位協作者以下列方式呈現：
+- **頭部代理：** 半透明球體含大頭照，隨頭部朝向旋轉
+- **手部代理：** 虛影手部模型，顯示捏合/抓取狀態
+- **凝視錐：** 微妙的 10 度錐形，顯示注視方向
+- **名稱標籤：** Billboard 渲染，顯示當前動作（「正在編輯 Node X」）
 
-**Conflict resolution:** First editor gets write lock; second sees "locked by [name]" with option to request access or duplicate the node.
+**衝突解決：** 第一位編輯者獲得寫入鎖定；第二位看到「被 [名稱] 鎖定」，可選擇請求存取或複製節點。
 
-### Adaptive Layout
+### 自適應佈局
 
-| Environment | Node Scale | Max LOD-2 Nodes | Graph Z-Spread |
-|-------------|-----------|-----------------|----------------|
-| VisionOS Window | 4x3cm | 5 | 0.05m/layer |
-| VisionOS Immersive | 12x8cm | 15 | 0.3m/layer |
-| WebXR Desktop | 120x80px | 8 (overlays) | Perspective projection |
-| WebXR Immersive | 12x8cm | 12 | 0.3m/layer |
+| 環境 | 節點尺寸 | 最大 LOD-2 節點數 | 圖形 Z 展幅 |
+|------|---------|-----------------|------------|
+| VisionOS 視窗 | 4x3cm | 5 | 0.05m/層 |
+| VisionOS 沉浸式 | 12x8cm | 15 | 0.3m/層 |
+| WebXR 桌面 | 120x80px | 8（覆蓋層） | 透視投影 |
+| WebXR 沉浸式 | 12x8cm | 12 | 0.3m/層 |
 
-### Transition Choreography
+### 轉場編排
 
-All transitions serve wayfinding. Maximum 600ms for major transitions, 200ms for minor, 0ms for selection.
+所有轉場服務於導航引導。主要轉場最長 600ms，次要 200ms，選擇 0ms。
 
-| Transition | Duration | Key Motion |
-|-----------|----------|------------|
-| Overview to Focus | 600ms | Camera drifts to target, other regions fade to 30% |
-| Focus to Detail | 500ms | Node slides forward, expands, connections highlight |
-| Detail to Overview | 600ms | Panel collapses, node retreats, full topology visible |
-| Zone Switch | 500ms | Current slides out laterally, new slides in |
-| Window to Immersive | 1000ms | Borders dissolve, nodes expand to full spatial positions |
+| 轉場 | 時長 | 關鍵動態 |
+|------|------|---------|
+| 概覽到聚焦 | 600ms | 相機漂移至目標，其他區域淡化至 30% |
+| 聚焦到詳情 | 500ms | 節點前滑、擴展、連接高亮 |
+| 詳情到概覽 | 600ms | 面板收合、節點退回、完整拓撲可見 |
+| 區域切換 | 500ms | 當前側滑出、新區域側滑入 |
+| 視窗到沉浸式 | 1000ms | 邊框溶解、節點擴展至完整空間位置 |
 
-### Comfort Measures
+### 舒適措施
 
-- No camera-initiated movement without user action
-- Stable horizon (horizontal plane never tilts)
-- Primary interaction within 0.8-2.5m, +/-15 degrees of eye line
-- Rest prompt after 45 minutes (ambient lighting shift, not modal)
-- Peripheral vignette during fast movement
-- All frequently-used controls accessible with arms at sides (wrist/finger only)
+- 未經使用者操作不啟動相機移動
+- 水平面保持穩定（永不傾斜）
+- 主要互動在 0.8-2.5m、視線 ±15 度範圍內
+- 45 分鐘後休息提示（環境光線變化，非模態）
+- 快速移動時周邊暈影
+- 所有常用控制可在手臂放下時操作（僅手腕/手指）
 
 ---
 
-## 10. Cross-Agent Synthesis
+## 10. 跨 Agent 綜合分析
 
-### Points of Agreement Across All 8 Agents
+### 全部 8 位 Agent 的共識點
 
-1. **2D-first, spatial-second.** Every agent independently arrived at this conclusion. Build a great web dashboard first, then progressively add spatial capabilities.
+1. **先 2D，後空間。** 每位 agent 都獨立得出此結論。先建構出色的網頁儀表板，再漸進式增加空間能力。
 
-2. **Debugging is the killer use case.** The Product Researcher, UX Researcher, and XR Interface Architect all converged on this: spatial overlay of runtime traces on workflow structure is where 3D genuinely beats 2D.
+2. **除錯是殺手級使用案例。** 產品研究員、UX 研究員和 XR 介面架構師都收斂於此：在工作流程結構上疊加執行時追蹤的空間覆蓋，是 3D 真正勝過 2D 的地方。
 
-3. **WebXR over VisionOS for initial reach.** Vision Pro's ~1M installed base cannot sustain a business. WebXR in the browser is the distribution unlock.
+3. **初期觸及 WebXR 優於 VisionOS。** Vision Pro 約 100 萬的安裝量無法支撐一個商業模式。瀏覽器中的 WebXR 才是分發突破口。
 
-4. **The "war room" collaboration scenario.** Multiple agents highlighted collaborative incident response as the strongest spatial value proposition -- teams entering a shared 3D space to debug a failing pipeline together.
+4. **「作戰室」協作情境。** 多位 agent 強調協作式事件應變是最強的空間價值主張 — 團隊進入共享 3D 空間，共同除錯一個失敗的管線。
 
-5. **Progressive disclosure is essential.** UX Research, Spatial UI, and Support all emphasized that spatial complexity must be revealed gradually, never dumped on a first-time user.
+5. **漸進式揭露不可或缺。** UX 研究、空間 UI 和支援都強調空間複雜度必須逐步揭示，絕不在首次使用者面前一次傾倒。
 
-6. **Voice as the power-user accelerator.** Both the UX Researcher and XR Interface Architect identified voice commands as the "command line of spatial computing" -- essential for accessibility and expert efficiency.
+6. **語音是進階使用者的加速器。** UX 研究員和 XR 介面架構師都將語音指令定義為「空間運算的命令列」— 對無障礙和專家效率至關重要。
 
-### Key Tensions to Resolve
+### 待解決的關鍵分歧
 
-| Tension | Position A | Position B | Resolution Needed |
-|---------|-----------|-----------|-------------------|
-| **Pricing** | Growth Hacker: $29-59/user/mo | Trend Researcher: $99-249/user/mo | A/B test in beta |
-| **VisionOS priority** | Architecture: Phase 3 (Week 13+) | Spatial UI: Full spec ready | Build WebXR first, VisionOS when validated |
-| **Orchestration language** | Architecture: Rust | Project Plan: Not specified | Rust is correct for performance-critical DAG execution |
-| **MVP scope** | Architecture: 2D only in Phase 1 | Brand: Lead with spatial | 2D first, but ensure spatial is in every demo |
-| **Community platform** | Support: Discord-first | Marketing: Discord + open-source | Both -- Discord for community, GitHub for developer engagement |
+| 分歧 | 立場 A | 立場 B | 需要的決議 |
+|------|--------|--------|-----------|
+| **定價** | 成長駭客：$29-59/用戶/月 | 趨勢研究員：$99-249/用戶/月 | Beta 階段 A/B 測試 |
+| **VisionOS 優先級** | 架構：第 3 階段（第 13 週+） | 空間 UI：完整規格已就緒 | 先建 WebXR，驗證後再做 VisionOS |
+| **協調語言** | 架構：Rust | 專案計畫：未指定 | Rust 是效能關鍵 DAG 執行的正確選擇 |
+| **MVP 範圍** | 架構：第 1 階段僅 2D | 品牌：以空間為主打 | 先 2D，但確保每個演示都有空間元素 |
+| **社群平台** | 支援：Discord 優先 | 行銷：Discord + 開源 | 兩者兼顧 — Discord 面向社群，GitHub 面向開發者互動 |
 
-### What This Exercise Demonstrates
+### 此演練展示了什麼
 
-This discovery document was produced by 8 specialized agents running in parallel, each bringing deep domain expertise to a shared objective. The agents independently arrived at consistent conclusions while surfacing domain-specific insights that would be difficult for any single generalist to produce:
+這份探索文件由 8 位專業 agents 平行運作產出，每位都將深厚的領域專業帶入共同目標。Agents 獨立得出了一致的結論，同時呈現出任何單一通才都難以產出的領域特定洞察：
 
-- The **Product Trend Researcher** found the sobering Vision Pro sales data that reframed the entire strategy
-- The **Backend Architect** designed a Rust orchestration engine that no marketing-focused team would have considered
-- The **Brand Guardian** created a category ("SpatialAIOps") rather than competing in an existing one
-- The **UX Researcher** identified that spatial computing creates friction for parameter tasks -- a counterintuitive finding
-- The **XR Interface Architect** designed the "data flows toward you" topology that maps to natural spatial cognition
-- The **Project Shepherd** identified the three critical bottleneck roles that could derail the entire timeline
-- The **Growth Hacker** designed viral loops specific to spatial computing's inherent shareability
-- The **Support Responder** turned the product's own AI capabilities into a support differentiator
+- **Product Trend Researcher** 找到了令人警醒的 Vision Pro 銷售數據，重新框定了整體策略
+- **Backend Architect** 設計了 Rust 協調引擎 — 任何行銷導向的團隊都不會考慮的方案
+- **Brand Guardian** 創造了一個類別（「SpatialAIOps」）而非在現有類別中競爭
+- **UX Researcher** 發現空間運算為參數任務帶來摩擦 — 一個反直覺的發現
+- **XR Interface Architect** 設計了「資料朝你流動」的拓撲 — 對應自然的空間認知
+- **Project Shepherd** 辨識出可能導致整個時程脫軌的三個關鍵瓶頸角色
+- **Growth Hacker** 設計了針對空間運算天生分享性的病毒迴圈
+- **Support Responder** 將產品自身的 AI 能力轉化為支援差異化優勢
 
-The result is a comprehensive, cross-functional product plan that could serve as the basis for actual development -- produced in a single session by an agency of AI agents working in concert.
+成果是一份全面的跨職能產品計畫，可作為實際開發的基礎 — 由一個 AI agents 組成的 agency 在單一工作階段中協作產出。
