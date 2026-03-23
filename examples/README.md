@@ -1,48 +1,48 @@
-# Examples
+# 範例
 
-This directory contains example outputs demonstrating how the agency's agents can be orchestrated together to tackle real-world tasks.
+此目錄包含範例輸出，展示如何協調 agency 的 agents 共同處理真實世界的任務。
 
-## Why This Exists
+## 為什麼有這個目錄
 
-The agency-agents repo defines dozens of specialized agents across engineering, design, marketing, product, support, spatial computing, and project management. But agent definitions alone don't show what happens when you **deploy them all at once** on a single mission.
+agency-agents 倉庫定義了數十個橫跨工程、設計、行銷、產品、支援、空間運算和專案管理的專業 agents。但光是 agent 定義本身無法展現當你**同時部署所有 agents** 執行單一任務時會發生什麼。
 
-These examples answer the question: *"What does it actually look like when the full agency collaborates?"*
+這些範例回答了這個問題：*「當整個 agency 協作時，實際上是什麼樣子？」*
 
-## Contents
+## 內容
 
 ### [nexus-spatial-discovery.md](./nexus-spatial-discovery.md)
 
-**What:** A complete product discovery exercise where 8 agents worked in parallel to evaluate a software opportunity and produce a unified plan.
+**概述：** 一個完整的產品探索演練，8 位 agents 平行作業，評估一個軟體機會並產出統一計畫。
 
-**The scenario:** Web research identified an opportunity at the intersection of AI agent orchestration and spatial computing. The entire agency was then deployed simultaneously to produce:
+**情境：** 網路調研發現了一個位於 AI Agent 協調與空間運算交匯處的機會。隨後整個 agency 同時部署，產出了：
 
-- Market validation and competitive analysis
-- Technical architecture (8-service system design with full SQL schema)
-- Brand strategy and visual identity
-- Go-to-market and growth plan
-- Customer support operations blueprint
-- UX research plan with personas and journey maps
-- 35-week project execution plan with 65 sprint tickets
-- Spatial interface architecture specification
+- 市場驗證與競爭分析
+- 技術架構（8 服務系統設計，含完整 SQL Schema）
+- 品牌策略與視覺識別
+- 上市策略與成長計畫
+- 客戶支援營運藍圖
+- UX 研究計畫，含人物誌與旅程地圖
+- 35 週專案執行計畫，含 65 個衝刺工單
+- 空間介面架構規格
 
-**Agents used:**
-| Agent | Role |
+**使用的 Agents：**
+| Agent | 角色 |
 |-------|------|
-| Product Trend Researcher | Market validation, competitive landscape |
-| Backend Architect | System architecture, data model, API design |
-| Brand Guardian | Positioning, visual identity, naming |
-| Growth Hacker | GTM strategy, pricing, launch plan |
-| Support Responder | Support tiers, onboarding, community |
-| UX Researcher | Personas, journey maps, design principles |
-| Project Shepherd | Phase plan, sprints, risk register |
-| XR Interface Architect | Spatial UI specification |
+| Product Trend Researcher | 市場驗證、競爭格局 |
+| Backend Architect | 系統架構、資料模型、API 設計 |
+| Brand Guardian | 品牌定位、視覺識別、命名 |
+| Growth Hacker | GTM 策略、定價、上市計畫 |
+| Support Responder | 支援層級、新手引導、社群 |
+| UX Researcher | 人物誌、旅程地圖、設計原則 |
+| Project Shepherd | 階段計畫、衝刺、風險登記簿 |
+| XR Interface Architect | 空間 UI 規格 |
 
-**Key takeaway:** All 8 agents ran in parallel and produced coherent, cross-referencing plans without coordination overhead. The output demonstrates the agency's ability to go from "find an opportunity" to "here's the full blueprint" in a single session.
+**關鍵要點：** 全部 8 位 agents 平行運作，在沒有協調開銷的情況下產出了連貫且相互參照的計畫。此輸出展示了 agency 在單一工作階段中從「發掘機會」到「產出完整藍圖」的能力。
 
-## Adding New Examples
+## 新增範例
 
-If you run an interesting multi-agent exercise, consider adding it here. Good examples show:
+如果你進行了有趣的多 Agent 演練，歡迎在這裡新增。優秀的範例應展示：
 
-- Multiple agents collaborating on a shared objective
-- The breadth of the agency's capabilities
-- Real-world applicability of the agent definitions
+- 多個 agents 圍繞共同目標協作
+- agency 能力的廣度
+- agent 定義的真實世界適用性
