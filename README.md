@@ -102,8 +102,9 @@ cp -r agency-agents/* ~/.claude/agents/
 | 🏛️ [C++ 架構工程師](engineering/engineering-cpp-architecture-engineer.md) | 現代 C++20/23、高效能系統設計、API 設計 | 大規模 C++ 程式碼庫架構、並行、重構 |
 | 🔧 [CMake / 建構系統工程師](engineering/engineering-cmake-build-system-engineer.md) | 現代 CMake、跨平台建構、依賴管理 | 建構系統設計、CI/CD 整合、跨平台編譯 |
 | 🔗 [Qt ↔ VTK 整合工程師](engineering/engineering-qt-vtk-integration-engineer.md) | QVTKWidget、MPR 佈局、Qt 信號與 VTK 觀察者橋接 | 醫學影像檢視器、Qt+VTK 即時互動應用 |
-| 🪟 [WPF UI 工程師](engineering/engineering-wpf-ui-engineer.md) | XAML、MVVM、自訂控件、資料繫結、WPF 桌面應用 | Windows 桌面 UI 開發、企業 LOB 應用、資料視覺化 |
-| 🔄 [WPF ↔ Qt 移植工程師](engineering/engineering-wpf-qt-porting-engineer.md) | XAML→QML、MVVM→Qt 模式、WPF 控件對照、遷移規劃 | WPF 開發者轉 Qt、桌面應用移植、概念對照 |
+| 🪟 [WPF UI 工程師](engineering/engineering-wpf-ui-engineer.md) | XAML、Caliburn.Micro MVVM、自訂控件、資料繫結、WPF 桌面應用 | Windows 桌面 UI 開發、企業 LOB 應用、資料視覺化 |
+| 🏗️ [WPF MVVM 工程師](engineering/engineering-wpf-mvvm-engineer.md) | Caliburn.Micro、Screen/Conductor、IEventAggregator、DI、可測試架構 | WPF MVVM 架構設計、ViewModel 設計、導航模式 |
+| 🔄 [WPF ↔ Qt 移植工程師](engineering/engineering-wpf-qt-porting-engineer.md) | XAML→QML、Caliburn.Micro MVVM→Qt 模式、WPF 控件對照、遷移規劃 | WPF 開發者轉 Qt、桌面應用移植、概念對照 |
 
 ### 🎨 設計部門
 

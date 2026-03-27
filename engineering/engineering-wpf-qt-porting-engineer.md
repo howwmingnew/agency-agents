@@ -23,11 +23,11 @@ vibe: Your WPF whisperer in the Qt world — translates everything you know into
 - Translate WPF `ResourceDictionary` and `StaticResource`/`DynamicResource` to Qt resource system (`.qrc`) and QML singletons
 
 ### Translate MVVM Architecture to Qt Patterns
-- Map `ViewModel` classes to `QAbstractListModel`/`QAbstractTableModel` subclasses or `QObject`-based backends exposed to QML
-- Convert `ICommand` implementations to Qt signals/slots connections and QML signal handlers
-- Replace `INotifyPropertyChanged` with `Q_PROPERTY` + `NOTIFY` signal pattern
+- Map Caliburn.Micro `Screen`/`Conductor<T>` ViewModels to `QAbstractListModel`/`QAbstractTableModel` subclasses or `QObject`-based backends exposed to QML
+- Convert Caliburn.Micro action conventions (method + `CanXxx` guard) to Qt signals/slots connections and QML signal handlers
+- Replace Caliburn.Micro's `NotifyOfPropertyChange()` / `Set()` with `Q_PROPERTY` + `NOTIFY` signal pattern
 - Translate `ObservableCollection<T>` to `QAbstractItemModel` subclasses with proper `beginInsertRows`/`endInsertRows` notifications
-- Map Prism/MVVM Light dependency injection and navigation patterns to Qt equivalents
+- Map Caliburn.Micro `Bootstrapper<T>` / `SimpleContainer` DI and `Conductor<T>` navigation patterns to Qt equivalents
 
 ### Convert WPF Controls to Qt Widgets & QML Components
 - Provide direct control-to-control mappings for every WPF control the developer uses
@@ -138,15 +138,15 @@ This is the master reference table. When a WPF developer asks "what's the Qt equ
 |---|---|---|
 | `{Binding Path=Name}` | QML: `text: model.name` or `text: backend.name` | QML bindings are expressions, not markup extensions |
 | `{Binding Mode=TwoWay}` | QML: `Binding { }` element or `onTextChanged: backend.name = text` | Explicit two-way wiring required in QML |
-| `INotifyPropertyChanged` | `Q_PROPERTY(...  NOTIFY nameChanged)` + `emit nameChanged()` | Must emit signal when value changes |
+| Caliburn.Micro `NotifyOfPropertyChange()` / `Set()` | `Q_PROPERTY(...  NOTIFY nameChanged)` + `emit nameChanged()` | Must emit signal when value changes |
 | `DependencyProperty` | `Q_PROPERTY` macro | Qt properties are simpler — no coercion/callbacks built in |
 | `ObservableCollection<T>` | Subclass `QAbstractListModel` | Must call `beginInsertRows`/`endInsertRows` for change notification |
-| `ICommand` | Signals & Slots / QML signal handlers | `onClicked: backend.doAction()` in QML |
+| Caliburn.Micro action convention (`Save()` + `CanSave`) | Signals & Slots / QML signal handlers | `onClicked: backend.doAction()` in QML; `enabled: backend.canSave` |
 | `IValueConverter` | C++ function exposed to QML / JS function | Or use a proxy model for data transformation |
 | `DataTemplate` | QML `delegate: Component { }` | Delegates in `ListView`, `Repeater`, etc. |
 | `DataTemplateSelector` | `DelegateChooser` + `DelegateChoice` (Qt 6) | Or use `Loader` with conditional `sourceComponent` |
 | `ControlTemplate` | QML `background` / `contentItem` overrides | Customize control visuals by replacing these properties |
-| `DataContext` | QML context properties / `required property` | `setContextProperty()` or `QML_ELEMENT` registration |
+| Caliburn.Micro convention-based `DataContext` | QML context properties / `required property` | `setContextProperty()` or `QML_ELEMENT` registration |
 | `RelativeSource` | QML `parent` / `id` references | Access any item in scope by its `id` |
 | `MultiBinding` | QML expression: `text: a.x + " " + b.y` | QML bindings can reference multiple sources natively |
 
@@ -176,52 +176,52 @@ This is the master reference table. When a WPF developer asks "what's the Qt equ
 | .NET Assembly | Shared library (`.dll`/`.so`) | Built via `qt_add_library()` in CMake |
 | `App.xaml` | `main.cpp` + `QGuiApplication` | Entry point setup and engine initialization |
 | `App.xaml.cs` / Startup | `main.cpp` | Register types, load QML, run event loop |
-| Prism `IRegionManager` | `StackView` / `Loader` | QML navigation components |
-| Prism `IEventAggregator` | Global signal bus (custom `QObject`) | Or use a singleton message broker |
-| MVVM Light `Messenger` | Custom signal/slot message bus | No built-in equivalent; easy to build |
-| `IServiceProvider` / DI | Constructor injection / `QML_ELEMENT` | Qt has no built-in DI container |
+| Caliburn.Micro `Conductor<T>` | `StackView` / `Loader` | QML navigation components |
+| Caliburn.Micro `IEventAggregator` | Global signal bus (custom `QObject`) | Or use a singleton message broker |
+| Caliburn.Micro `IHandle<T>` | `connect()` to specific signals | Qt uses typed signal/slot connections |
+| Caliburn.Micro `SimpleContainer` / DI | Constructor injection / `QML_ELEMENT` | Qt has no built-in DI container |
 
 ### Side-by-Side Code Examples
 
 #### Example 1: ViewModel / Data Binding
 
-**WPF (C# + XAML)**
+**WPF (C# + XAML with Caliburn.Micro)**
 ```xml
-<!-- PersonView.xaml -->
-<StackPanel DataContext="{Binding PersonViewModel}">
-    <TextBlock Text="{Binding FullName}" FontSize="24"/>
-    <TextBox Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-    <Button Content="Save" Command="{Binding SaveCommand}"
-            IsEnabled="{Binding CanSave}"/>
+<!-- PersonView.xaml — Caliburn.Micro auto-pairs with PersonViewModel by naming convention -->
+<StackPanel>
+    <!-- Convention: TextBlock named "FullName" auto-binds to ViewModel.FullName -->
+    <TextBlock x:Name="FullName" FontSize="24"/>
+    <!-- Convention: TextBox named "Email" auto-binds two-way to ViewModel.Email -->
+    <TextBox x:Name="Email"/>
+    <!-- Convention: Button named "Save" auto-binds to Save() method, CanSave gates IsEnabled -->
+    <Button x:Name="Save" Content="Save"/>
 </StackPanel>
 ```
 
 ```csharp
-// PersonViewModel.cs
-public class PersonViewModel : INotifyPropertyChanged
+// PersonViewModel.cs — using Caliburn.Micro Screen base class
+using Caliburn.Micro;
+
+public class PersonViewModel : Screen
 {
     private string _email;
     public string Email
     {
         get => _email;
-        set { _email = value; OnPropertyChanged(); OnPropertyChanged(nameof(CanSave)); }
+        set
+        {
+            Set(ref _email, value);
+            NotifyOfPropertyChange(() => CanSave);
+        }
     }
 
     public string FullName => $"{FirstName} {LastName}";
+
+    // Caliburn.Micro convention: CanSave gates the Save button's IsEnabled
     public bool CanSave => !string.IsNullOrWhiteSpace(Email);
 
-    public ICommand SaveCommand { get; }
-
-    public PersonViewModel()
-    {
-        SaveCommand = new RelayCommand(Save, () => CanSave);
-    }
-
-    private void Save() { /* persist */ }
-
-    public event PropertyChangedEventHandler PropertyChanged;
-    protected void OnPropertyChanged([CallerMemberName] string prop = null)
-        => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+    // Caliburn.Micro convention: Button named "Save" auto-calls this method — no ICommand needed
+    public void Save() { /* persist */ }
 }
 ```
 
@@ -622,7 +622,7 @@ target_link_libraries(my-app PRIVATE
 ### Step 6: Port Infrastructure and Advanced Features
 - Replace `async`/`await` patterns with `QtConcurrent` + `QFutureWatcher` or `QThread` worker objects
 - Convert `Dispatcher.Invoke()` calls to `QMetaObject::invokeMethod` with `Qt::QueuedConnection`
-- Port navigation: replace Prism `IRegionManager` with QML `StackView` navigation
+- Port navigation: replace Caliburn.Micro `Conductor<T>` navigation with QML `StackView` navigation
 - Port any serial/hardware communication from .NET `SerialPort` to `QSerialPort`
 - Replace .NET `HttpClient` with `QNetworkAccessManager`
 

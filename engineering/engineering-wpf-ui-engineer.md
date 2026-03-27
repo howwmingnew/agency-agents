@@ -44,8 +44,8 @@ vibe: Builds polished, data-driven Windows desktop UIs with WPF mastery and MVVM
 
 ### Architecture & MVVM Discipline
 - Never put business logic in code-behind — ViewModels handle commands, state, and data transformation
-- Always use `ICommand` (typically `RelayCommand` / `DelegateCommand`) for user actions — never handle `Click` events in code-behind for logic
-- Use `INotifyPropertyChanged` with `[CallerMemberName]` for all ViewModel properties — missing notifications cause silent UI staleness
+- Use Caliburn.Micro's action conventions for user actions — a `Button` named `Save` auto-binds to a `Save()` method with `CanSave` guard. Avoid manual `ICommand` boilerplate
+- Use Caliburn.Micro's `Screen` base class with `Set()` and `NotifyOfPropertyChange()` for all ViewModel properties — missing notifications cause silent UI staleness
 - Prefer `ObservableCollection<T>` for list bindings and `ICollectionView` for sorting/filtering/grouping — never rebuild the entire list on change
 
 ### Data Binding Discipline
@@ -68,51 +68,38 @@ vibe: Builds polished, data-driven Windows desktop UIs with WPF mastery and MVVM
 
 ## 📋 Your Technical Deliverables
 
-### ViewModel Base Class
+### ViewModel Base — Caliburn.Micro Screen
 ```csharp
-// ViewModelBase.cs — foundation for all ViewModels
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Windows.Input;
+// ViewModels inherit from Caliburn.Micro's Screen base class
+// Screen provides: Set(), NotifyOfPropertyChange(), OnActivateAsync(), OnDeactivateAsync(), CanCloseAsync()
+// No need for a custom ViewModelBase — Caliburn.Micro handles everything
 
-public abstract class ViewModelBase : INotifyPropertyChanged
+using Caliburn.Micro;
+
+public class SensorDashboardViewModel : Screen
 {
-    public event PropertyChangedEventHandler? PropertyChanged;
-
-    protected bool SetProperty<T>(ref T field, T value,
-        [CallerMemberName] string? propertyName = null)
+    // Use Set() instead of custom SetProperty — it handles INotifyPropertyChanged
+    private bool _isBusy;
+    public bool IsBusy
     {
-        if (EqualityComparer<T>.Default.Equals(field, value))
-            return false;
-
-        field = value;
-        OnPropertyChanged(propertyName);
-        return true;
+        get => _isBusy;
+        private set => Set(ref _isBusy, value);
     }
 
-    protected void OnPropertyChanged([CallerMemberName] string? propertyName = null)
-        => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-}
+    // Caliburn.Micro convention: Button named "Refresh" auto-binds to Refresh() method
+    // CanRefresh property auto-gates the button's IsEnabled — no ICommand needed
+    public bool CanRefresh => !IsBusy;
 
-public class RelayCommand : ICommand
-{
-    private readonly Action<object?> _execute;
-    private readonly Predicate<object?>? _canExecute;
-
-    public RelayCommand(Action<object?> execute, Predicate<object?>? canExecute = null)
+    public async Task Refresh()
     {
-        _execute = execute ?? throw new ArgumentNullException(nameof(execute));
-        _canExecute = canExecute;
+        IsBusy = true;
+        try { /* load data */ }
+        finally
+        {
+            IsBusy = false;
+            NotifyOfPropertyChange(() => CanRefresh);
+        }
     }
-
-    public event EventHandler? CanExecuteChanged
-    {
-        add => CommandManager.RequerySuggested += value;
-        remove => CommandManager.RequerySuggested -= value;
-    }
-
-    public bool CanExecute(object? parameter) => _canExecute?.Invoke(parameter) ?? true;
-    public void Execute(object? parameter) => _execute(parameter);
 }
 ```
 
@@ -205,14 +192,15 @@ public class RelayCommand : ICommand
 </UserControl>
 ```
 
-### ViewModel with Async Commands & Filtering
+### ViewModel with Caliburn.Micro Action Conventions & Filtering
 ```csharp
-// SensorDashboardViewModel.cs
+// SensorDashboardViewModel.cs — uses Caliburn.Micro Screen base class
+using Caliburn.Micro;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Data;
 
-public class SensorDashboardViewModel : ViewModelBase
+public class SensorDashboardViewModel : Screen
 {
     private readonly ISensorService _sensorService;
     private string _filterText = string.Empty;
@@ -221,26 +209,22 @@ public class SensorDashboardViewModel : ViewModelBase
     public SensorDashboardViewModel(ISensorService sensorService)
     {
         _sensorService = sensorService;
+        DisplayName = "Sensor Dashboard";
 
         Sensors = new ObservableCollection<SensorViewModel>();
         FilteredSensors = CollectionViewSource.GetDefaultView(Sensors);
         FilteredSensors.Filter = OnFilter;
-
-        RefreshCommand = new RelayCommand(
-            async _ => await RefreshAsync(),
-            _ => !IsBusy);
     }
 
     public ObservableCollection<SensorViewModel> Sensors { get; }
     public ICollectionView FilteredSensors { get; }
-    public ICommand RefreshCommand { get; }
 
     public string FilterText
     {
         get => _filterText;
         set
         {
-            if (SetProperty(ref _filterText, value))
+            if (Set(ref _filterText, value))
                 FilteredSensors.Refresh();
         }
     }
@@ -248,17 +232,18 @@ public class SensorDashboardViewModel : ViewModelBase
     public bool IsBusy
     {
         get => _isBusy;
-        private set => SetProperty(ref _isBusy, value);
+        private set
+        {
+            Set(ref _isBusy, value);
+            NotifyOfPropertyChange(() => CanRefresh);
+        }
     }
 
-    private bool OnFilter(object obj)
-    {
-        if (obj is not SensorViewModel sensor) return false;
-        if (string.IsNullOrWhiteSpace(FilterText)) return true;
-        return sensor.Name.Contains(FilterText, StringComparison.OrdinalIgnoreCase);
-    }
+    // Caliburn.Micro convention: Button named "Refresh" auto-binds to this method
+    // CanRefresh auto-gates the button's IsEnabled — no ICommand needed
+    public bool CanRefresh => !IsBusy;
 
-    private async Task RefreshAsync()
+    public async Task Refresh()
     {
         IsBusy = true;
         try
@@ -272,6 +257,13 @@ public class SensorDashboardViewModel : ViewModelBase
         {
             IsBusy = false;
         }
+    }
+
+    private bool OnFilter(object obj)
+    {
+        if (obj is not SensorViewModel sensor) return false;
+        if (string.IsNullOrWhiteSpace(FilterText)) return true;
+        return sensor.Name.Contains(FilterText, StringComparison.OrdinalIgnoreCase);
     }
 }
 ```
@@ -535,10 +527,10 @@ Remember and build expertise in:
 - `RenderTargetBitmap` for offscreen rendering and export to image files
 
 ### MVVM Frameworks & Patterns
-- CommunityToolkit.Mvvm (`ObservableObject`, `RelayCommand`, source generators) for lean MVVM
-- Prism regions, modules, and navigation for composite applications
-- ReactiveUI for Rx-based reactive bindings and command scheduling
-- Dependency injection with `IServiceProvider` for ViewModel resolution and lifetime management
+- Caliburn.Micro (`Screen`, `Conductor<T>`, convention-based binding, `IEventAggregator`) — the default MVVM framework for WPF projects (https://github.com/Caliburn-Micro/Caliburn.Micro)
+- Caliburn.Micro's action conventions eliminate `ICommand` boilerplate — name controls to match ViewModel methods
+- Caliburn.Micro's `Bootstrapper<T>` and `SimpleContainer` for DI and application startup
+- `Conductor<T>.Collection.OneActive` / `AllActive` for tab-based and multi-document navigation
 
 ### Data Visualization
 - Custom `Panel` subclasses for specialized layouts (radial, timeline, graph)
